@@ -1,0 +1,519 @@
+
+
+
+
+
+\begin{outline-text-1}
+\begin{center}
+浅井 政太郎 東京大学 総合文化研究科
+\end{center}
+
+\textbf{発表要旨}
+
+\begin{expanded}
+\begin{enumerate}
+\item これまでの研究業績
+\begin{enumerate}
+\item Fully Automated Cyclic Planning for Large-Scale Manufacturing Domains※1. In ICAPS14.
+\item Solving Large-Scale Planning Problems by Decomposition and Macro Generation※1. In ICAPS15.
+\item Tiebreaking Strategies for A* Search: How to Explore the Final Frontier※1. In AAAI16. \textbf{\emph{(JSAI 学生奨励賞)}}
+\item Tie-Breaking Strategies for Cost-Optimal Best First Search※1. Journal of Artificial Intelligence Research 58 (2017): 67-121.
+\item Exploration Among and Within Plateaus in Greedy Best-First Search※1. In ICAPS17.
+\item Efficient Optimal Search under Expensive Edge Cost Computation※2. In IJCAI17.
+\item Classical Planning in Deep Latent Space: From Unlabeled Images to PDDL (and back)※1. In KEPS17.
+\end{enumerate}
+\item 今後の研究計画 : \textbf{\emph{Neural-Symbolic Hybrid System による 次世代AIシステムの研究開発}}
+\end{enumerate}
+\end{expanded}
+
+\begin{smaller}
+※1 Masataro Asai, Alex Fukunaga
+
+※2 Masataro Asai, Akihiro Kishimoto, Adi Botea, Radu Marinescu, Elizabeth Daly M, and Spyros Kotoulas
+\end{smaller}
+\end{outline-text-1}
+
+\section{研究テーマ: プランニング(自動行動計画)とは?}
+\label{sec-1}
+
+
+
+\includegraphics{img/planning.png}
+
+\section{プランニング(自動行動計画)分野の位置づけ}
+\label{sec-2}
+
+\begin{resume}
+プランニング分野は、人工知能の専門分野という位置づけで、
+隣接するオペレーションズ・リサーチや
+アルゴリズム論などの分野の技術を利用しています。
+特に、プランニング問題を解くのにはグラフ探索の技術が用いられます。
+\end{resume}
+
+\includegraphics{img/planning2.png}
+
+\section{研究業績1 : 査読付き学会論文 ICAPS14 \textbf{\emph{(採択率33\%)}}}
+\label{sec-3}
+
+\begin{resume}
+研究業績に移ります。
+ここでは、大規模なプランニング問題を解くために
+問題設定・ドメインによらず汎用に繰り返し構造を抽出する方法を開発しました。
+元の問題を繰り返し一周分の小問題に分割して解くことで、
+高速化と3割の生産時間短縮を達成しました。
+
+大切なのは汎用性です。
+生産問題に限らず、掃除にも宇宙船にも同じ実行バイナリが使えます。
+\end{resume}
+
+\includegraphics{img/assemble-icaps14.png}
+
+\section{研究業績2 : 査読付き学会論文 ICAPS15 \textbf{\emph{(採択率33\%)}}}
+\label{sec-4}
+
+\begin{resume}
+続いて二、三本目の業績は、
+先ほどの手法で得られるのは1種類の小問題だけでしたが、これを複数種類の小問題に拡張しました。
+結果、より様々な問題で高速化を達成しました。
+ここまで汎用に小問題分割を適用した研究は、分野では始めてです。
+\end{resume}
+
+\includegraphics{img/assemble-keps14-icaps15.png}
+
+\section{研究業績3 : 査読付き学会論文 AAAI16 \textbf{\emph{(採択率26\%)}}}
+\label{sec-5}
+
+\begin{resume}
+最後に、申請後に行った研究が、難関国際学会 AAAI に採択されました。
+研究内容は、コスト0の辺を含むグラフを扱うグラフ探索アルゴリズム一般に適用できる内容で、
+非常に大きなインパクトを持つことが考えられます。
+\end{resume}
+
+\includegraphics{img/aaai16.png}
+
+\section{研究業績4 : 査読付き論文誌 JAIR \textbf{\emph{(採択率12\%)}}}
+\label{sec-6}
+
+\begin{resume}
+\end{resume}
+
+\includegraphics{img/jair17.png}
+
+\section{研究業績5 : 学会論文 ICAPS17 \textbf{\emph{(採択率33\%)}}}
+\label{sec-7}
+
+\begin{resume}
+\end{resume}
+
+\includegraphics{img/icaps17.png}
+
+\section{研究業績6 : 査読付き学会論文 IJCAI17 \textbf{\emph{(採択率25\%)}}}
+\label{sec-8}
+
+\begin{resume}
+\end{resume}
+
+\includegraphics{img/ijcai17.png}
+
+\section{研究業績7 : 査読付きワークショップ KEPS (採択率60\%)}
+\label{sec-9}
+
+\begin{resume}
+\end{resume}
+
+\includegraphics{img/keps17.png}
+
+\subsection{研究業績7 : 査読付きワークショップ KEPS (採択率60\%)}
+\label{sec-9-1}
+
+\includegraphics{img/keps17-2.png}
+
+\subsection{研究業績7 : 査読付きワークショップ KEPS (採択率60\%)}
+\label{sec-9-2}
+
+\includegraphics{img/keps17-3.png}
+
+\section{今後の研究計画}
+\label{sec-10}
+
+\begin{resume}
+
+\end{resume}
+
+\includegraphics{img/keps17-4.png}
+
+\section{まとめ}
+\label{sec-11}
+
+\begin{resume}
+以上です、ありがとうございました。
+\end{resume}
+
+\begin{smaller}
+\begin{enumerate}
+\item \textbf{難関国際会議(33\%)} Fully Automated Cyclic Planning for Large-Scale Manufacturing Domains. In ICAPS2014.
+\begin{enumerate}
+\item 任意の問題から1種類の繰り返し構造を自動で検出
+\item \textbf{工場での製造スケジューリング (x1000 高速化, 探索空間 10$^{\text{6}}$ → 10$^{\text{274}}$)}
+\end{enumerate}
+\item \textbf{難関国際会議(33\%)} Solving Large-Scale Planning Problems by Decomposition and Macro Generation. In ICAPS2015.
+\begin{enumerate}
+\item 複数の繰り返し構造をより柔軟・汎用に組み合わせる手法
+\item \textbf{ベンチマークセット全体で高速化 (x3-4 高速化, 探索空間 10$^{\text{7}}$ → 10$^{\text{28}}$)}
+\end{enumerate}
+\item \textbf{難関国際会議(26\%)} Tiebreaking Strategies for A* Search: How to Explore the Final Frontier. In AAAI-2016. (JSAI 学生奨励賞)
+\begin{enumerate}
+\item コストゼロの辺がグラフ探索に引き起こす問題を解決
+\item \textbf{コストゼロの辺を含むグラフ探索全てに影響 (探索空間 10$^{\text{6}}$ → 10$^{\text{88}}$)}
+\end{enumerate}
+\item \textbf{難関論文誌(12\%)}   Tie-Breaking Strategies for Cost-Optimal Best First Search. Journal of Artificial Intelligence Research 58 (2017): 67-121.
+\begin{enumerate}
+\item (3.) に加え タイブレーキング と 非最適コスト探索の関連性を指摘
+\item さらに性能向上
+\end{enumerate}
+\item \textbf{難関国際会議(33\%)} Exploration Among and Within Plateaus in Greedy Best-First Search. In ICAPS2017.
+\begin{enumerate}
+\item 非最適コスト探索をフラクタルを用いて改善
+\item プラトー内均一化とプラトー間均一化の直交性を実証
+\end{enumerate}
+\item \textbf{難関国際会議(25\%)} Efficient Optimal Search under Expensive Edge Cost Computation. In IJCAI-2017.
+\begin{enumerate}
+\item 辺コストの動的計算が必要な問題に対して高速な最適アルゴリズムDEA*
+\end{enumerate}
+\item \textbf{国際ワークショップ(60\%)} Classical Planning in Deep Latent Space: From Unlabeled Images to PDDL (and back).
+Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
+\begin{enumerate}
+\item 画像から命題を自動生成して記号的AIで組合せ最適化問題を解き、画像で出力するシステム
+\end{enumerate}
+\end{enumerate}
+\end{smaller}
+
+\section{付録 古典プランニング問題とは (定義)}
+\label{sec-12}
+
+アクション集合 A, オブジェクト集合 O, 初期状態 I, ゴールG
+
+\textbf{状態} := 真である命題の集合
+
+\textbf{アクションa∈A} : < pre(a), add(a), del(a), cost(a) >
+
+ただし、 pre(a): 前提条件, add(a): 追加効果, del(a): 削除効果, cost(a): アクションの適用コスト
+
+\textbf{状態sに対するアクションaの適用:} pre(a) ⊆ s の時に適用可能で、
+
+　a(s) = ( s ∪ add(a) ) / del(a)
+
+\textbf{終了判定}: s ⊇ G ならば ゴール達成
+
+\section{付録 古典プランニングを研究する意義は?}
+\label{sec-13}
+
+\includegraphics{img/classical-meaning.png}
+
+\section{付録 AIの倫理について}
+\label{sec-14}
+
+\begin{itemize}
+\item 研究内容は 漠然とした「AI」のうち \textbf{グラフ探索} の研究
+\item 善悪の判断はそれ自体は行わない
+\item 価値判断は与えられる入力の中にある = 使用者の価値観を反映する
+\item 悪用の問題はある。しかし、自分としては、災害救助ロボットなど、人道的な応用を目指している
+\end{itemize}
+
+\section{付録 ディープラーニングとどう違うのか}
+\label{sec-15}
+
+\begin{itemize}
+\item 機械学習を埋め込むことは可能だ
+\item が、求められる推論の複雑さが根本的に違う → 独立した分野
+\end{itemize}
+
+\begin{container-fluid}
+\begin{row-fluid}
+\begin{span7}
+\textbf{ニューラルネット}, \textbf{DL}, \textbf{強化学習}
+\begin{itemize}
+\item 入力: 現在のデータ、過去の履歴、報酬 etc..
+\item 出力:
+\begin{itemize}
+\item \textbf{次の1ステップ} のアクション選択ポリシー (強化学習)
+\item \textbf{固定長の分類結果} (画像認識)
+\item ある意味 状況に応じて脊髄反射 なエージェント
+\end{itemize}
+\end{itemize}
+\end{span7}
+\begin{span5}
+\textbf{プランニング}
+出力:
+\begin{itemize}
+\item \textbf{10ステップ, 100ステップ先} の未来を \textbf{先読み} した行動計画
+\item ICAPS14,15の手法を使えば \textbf{数千ステップ} 先の未来まで先読みすることが出来る
+\end{itemize}
+\end{span5}
+\end{row-fluid}
+\end{container-fluid}
+
+ただしプランニングに学習機を埋め込むことは \textbf{可能} (実例複数あり)
+
+DLから見て、プランニングは \textbf{アプリケーション}
+
+プランニングから見て、DLは \textbf{ツール}
+
+両者の組み合わせは機会があればやってみたい
+
+\subsection{付録 ディープラーニング関連}
+\label{sec-15-1}
+
+趣味の一環で、Common Lisp から直接使えるGPGPUのライブラリを作成中 (DLを作ってみるため)
+
+\begin{itemize}
+\item OpenCLベース
+\item Lisp の文法を直接 OpenCL C に変換し実行するトランスレータ
+\item OpenCLのメモリ管理を Lisp GC に埋め込み
+\end{itemize}
+
+\section{付録 第五世代コンピュータとの違いは?}
+\label{sec-16}
+
+第五世代コンピュータ : 並列推論機械(Prologベース,ハードウェア,OS)
+
+根本的なソフトウェア技術、 \textbf{探索技術} が未発達だった
+
+\begin{center}
+\begin{tabular}{ll}
+第五世代 & 現在\\
+\hline
+後方全探索+バックトラック & \textbf{前方ヒューリスティック探索}\\
+Prologベース & C/C++で高度に最適化されたプログラム\\
+ & State packing, 決定木, mutex\ldots{}\\
+\end{tabular}
+\end{center}
+
+今はベンチマーク問題 \textbf{1104問} のうち 5分で \textbf{800問} 前後解ける
+
+仮に \textbf{当時のソフトウェア} を \textbf{現在のハードウェア} で動かしたとしても、 \textbf{100問も解けないだろう}
+
+\section{付録 Explicit Graph と Implicit Graph との違い}
+\label{sec-17}
+
+
+\begin{container-fluid}
+\begin{row-fluid}
+\begin{span4}
+\textbf{カーナビ、ソーシャルグラフなど} : Explicit Graph Search
+
+グラフ全体がメモリ(〜数ペタバイト)または二次記憶(〜数ゼタバイト)に収まる
+
+参考: 2012年の全世界のデジタルデータ: 数ゼタバイト (1ZB = 10$^{\text{21}}$ バイト)
+
+AI and Web の分野など
+\end{span4}
+\begin{span8}
+\textbf{プランニングにおける探索グラフ} : Implicit Graph Search
+
+地球に存在する全計算資源を集めても二次記憶に入らない
+
+グラフのノード数は状態変数に対して \textbf{指数的に増加}
+
+動的に必要な量のみメモリ確保をしないと問題が解けない
+
+探索空間サイズの例:
+
+3x3x3のルービックキューブ: 4.32 x 10$^{\text{19}}$ = 4 エクサバイト
+
+4x4x4のルービックキューブ: 7.40 x 10$^{\text{45}}$ > 10$^{\text{24}}$ ゼタバイト
+
+5x5x5のルービックキューブ: 2.83 x 10$^{\text{74}}$
+\end{span8}
+\end{row-fluid}
+\end{container-fluid}
+
+
+\begin{note}
+Gantz et al. "The digital universe in 2020: Big data, bigger digital shadows, and biggest growth in the far east." IDC iView: IDC Analyze the Future 2007 (2012): 1-16.
+\end{note}
+
+
+\section{付録 似たような研究は誰がやっていますか どこでやられていますか}
+\label{sec-18}
+
+
+\begin{xlarge}
+国内ですか、国外ですか？
+\begin{center}
+YES NO
+\end{center}
+\end{xlarge}
+
+\section{付録 プランニングはマイナーで大したことのない分野?}
+\label{sec-19}
+
+日本にプランニングの研究室がない ≠ 世界で研究室がない
+
+\textbf{ICAPS}, \textbf{SoCS} : 例年150人-200人の参加者を集めており大変盛況, 
+
+\textbf{AAAI}, \textbf{IJCAI} : プランニングに関する論文は例年数十本採択 Proceedingsの一つの章をなす
+
+\textbf{JAIR}, \textbf{AIJ} : 論文誌でもプランニングの論文は多い (JAIR Volume 54: 12本中 2本 がプランニング論文)
+
+\textbf{主な研究室}:
+
+MIT CSAIL (Brian Williams), Carnegie-Mellon, 
+
+NASA (NASA Ames および NASA/Caltech JPL のそれぞれに20名以上の研究者), 欧州宇宙機関(ESA)
+
+指導教員は NASA JPL AI Lab の元メンバー
+
+\section{付録 汎用性を失わずに解く?}
+\label{sec-20}
+
+\textbf{No Free Lunch 定理}: 最適化アルゴリズムの性能は \textbf{全問題の平均を取れば} 全て同じ
+
+Q. NFL定理のもとで「汎用性を失わずに高速に解く」というのは不可能?
+
+A. NFL定理は確かにそのように主張するが、プランニング分野の意味する「汎用性」は
+
+\textbf{人間にとって有意義な問題の集合} における汎用性である。
+
+\begin{center}
+全プランニング問題の集合 ⊇ 人間にとって有意義な問題の集合
+\end{center}
+
+従って、 \textbf{全問題の平均を取れば} という前提が成り立たない。
+
+\section{付録 その研究は\ldots{}}
+\label{sec-21}
+
+
+
+\begin{center}
+\begin{tabular}{lllllll}
+ & 重要度 & 評価 & オリジナリティ & 過去のインパクト & 未来のインパクト & 動機\\
+\hline
+ACP &  & 発表した & ループの概念を検出 & はるかに巨大な問題 & 産業応用 & 人間プログラマでは追いつかない\\
+ &  & 難関学会 &  &  & 大規模問題 & \\
+ &  &  &  &  &  & \\
+ &  &  &  &  &  & \\
+CAP &  & 難関学会 & 問題分割手法 & 大規模な問題 & 産業応用 & \\
+ &  & 発表した & 柔軟な統合手法 & それまでの分割系の手法より & 混ざった問題 & \\
+ &  & いくつか質問された &  & 広範囲に分割 &  & \\
+ &  & メールやり取り &  &  &  & \\
+ &  &  &  &  &  & \\
+\hline
+AAAI16 &  & 三人中 & 同コストのノードの分類 & 70年代からの定説を覆す & 広範なグラフ探索問題 & 下界以外で改善したかった\\
+ &  & 二人の査読者に絶賛された &  & 通常と異なる方法で性能改善 & 基礎技術 & \\
+ &  &  &  & コスト0は実応用によく使われる &  & \\
+ &  &  &  &  &  & \\
+ &  &  &  &  &  & \\
+ &  &  &  &  &  & \\
+\hline
+過去全体 &  &  &  &  &  & \\
+ &  &  &  &  &  & \\
+未来全体 &  &  &  &  &  & \\
+ &  &  &  &  &  & \\
+過去未来 &  &  &  &  &  & \\
+ &  &  &  &  &  & \\
+ &  &  &  &  &  & グラフ探索の下界関数\\
+ &  & どちらも &  &  &  & \\
+対称性 &  & underinvestigated, &  &  & 産業応用 & これの改善では改善に限界がある\\
+ &  & もっとしらべるべき &  &  &  & ことがわかっている\\
+問題分割 &  & とされている &  &  &  & どちらも綺麗なアイディアではない\\
+ &  &  &  &  &  & 産業応用\\
+融合 &  &  &  &  &  & \\
+ &  &  &  &  &  & \\
+\end{tabular}
+\end{center}
+
+\subsection{国内で誰が似たようなことをやっているか}
+\label{sec-21-1}
+
+この専門分野をやっている人は少ないんですが、
+少し離れているが最も似ている研究というと
+
+SATソルバの研究の人はいる -- 田中先生
+
+推論系 -- logic and reasoning
+
+Lemma Reusing for SAT based Planning and Scheduling
+ICAPS 10年ぐらい前 NIIの井上勝海 CSP でプランニング
+
+神戸大学
+田沼先生 SAT
+
+九大 横尾誠先生
+AAMAS マルチエージェントCSP
+
+自分の指導教官がアメリカから飛んできた研究者なので、もともと日本にいなかった研究者だった
+
+スライド2を見せる
+
+ERATOの人は同じくグラフ探索をやっていますが、
+explicit/implicit の違いがあります。
+瓦林先生
+秋葉さん
+
+Katsutoshi Hirayama, Kobe university  (constraint optimization, CSP, distributed CSP)
+
+Toru Ishida (Kyoto U. stopped working in search a long time ago, but for a while, he was the leader in A*-related search methods in Japan; coauthored some papers with Korf).
+
+\section{付録 学会論文の位置づけ}
+\label{sec-22}
+
+\section{HTN と ICAPS-15 の違い}
+\label{sec-23}
+
+HTNは人間が問題分割を行う
+人件費を考えると非常にコストパフォーマンスが悪い
+→ 自動で問題分割
+
+\section{付録 Q\&A}
+\label{sec-24}
+
+\begin{itemize}
+\item Q. 探索空間の比較について、なぜ「以前」の数字がスライドによって変わるの?
+\item A. 論文の中で使った実験設定が異なるからです。
+\end{itemize}
+
+\section{付録 今後のキャリアパスは？}
+\label{sec-25}
+
+研究者押しで押しまくる
+大学あるいは企業の研究者
+迷うことなくパッと答える
+
+\section{付録 今後の研究計画が、インパクトの少ない今までの延長のように見えるんだけど・・・}
+\label{sec-26}
+
+
+\section{付録 アドホックな解法に見えるんだけど・・・}
+\label{sec-27}
+
+
+\section{付録 失敗しそうなんだけど・・・}
+\label{sec-28}
+
+
+\section{付録?? とにかくまとはずれな質問}
+\label{sec-29}
+
+引き出しを探るタイプの質問
+
+
+
+上席研究員
+主任研究員
+
+senior engineer
+
+4段階
+
+下
+associate
+XX
+senior
+principal
+上
+
+PI principal investigator
+
+time sink

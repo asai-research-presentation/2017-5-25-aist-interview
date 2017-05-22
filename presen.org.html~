@@ -3,8 +3,8 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>問題分割と対称性検知を用いた、 高速なプランニングアルゴリズムの開発</title>
-<!-- 2017-05-22 月 10:16 -->
+<title></title>
+<!-- 2017-05-22 月 23:18 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -144,50 +144,51 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">問題分割と対称性検知を用いた、 高速なプランニングアルゴリズムの開発</h1>
+<h1 class="title"></h1>
 <div class="outline-text-1">
-<div class="smaller">
 <div class="center">
 <p>
-浅井 政太郎(受付番号10073) 東京大学 総合文化研究科
+浅井 政太郎 東京大学 総合文化研究科
 </p>
 </div>
 
-</div>
 <p>
 <b>発表要旨</b>
 </p>
 
-<div class="smaller">
 <div class="expanded">
 <ol class="org-ol">
-<li>これまでの研究業績 : 査読付き学会論文
+<li>これまでの研究業績
 <ol class="org-ol">
-<li><span class="underline">Asai, M.</span> and Fukunaga, A. Fully Automated Cyclic Planning for Large-Scale Manufacturing Domains. In <i>Proceedings of the 24th International Conference of Automated Planning and Scheduling(<b>ICAPS</b>)</i>, June 2014.
+<li>Fully Automated Cyclic Planning for Large-Scale Manufacturing Domains※1. In ICAPS14.
 </li>
-<li><span class="underline">Asai, M.</span> and Fukunaga, A. Applying Problem Decomposition to Extremely Large Planning Domains. In <i>Proceedings of the 5th Workshop on Knowledge Engineering for Planning and Scheduling(<b>KEPS</b>)</i>, June 2014.
+<li>Solving Large-Scale Planning Problems by Decomposition and Macro Generation※1. In ICAPS15.
 </li>
-<li><span class="underline">Asai, M.</span> and Fukunaga, A. Solving Large-Scale Planning Problems by Decomposition and Macro Generation.In <i>Proceedings of the 25th International Conference of Automated Planning and Scheduling(<b>ICAPS</b>)</i>, June 2015. 
+<li>Tiebreaking Strategies for A* Search: How to Explore the Final Frontier※1. In AAAI16. <b><i>(JSAI 学生奨励賞)</i></b>
 </li>
-<li><span class="underline">Asai, M.</span> and Fukunaga, A. Tiebreaking Strategies for Classical Planning Using A* Search. In <i>Proceedings of the 30th AAAI Conference on Artificial Intelligence (<b>AAAI</b>)</i>, February 2016. 
+<li>Tie-Breaking Strategies for Cost-Optimal Best First Search※1. Journal of Artificial Intelligence Research 58 (2017): 67-121.
+</li>
+<li>Exploration Among and Within Plateaus in Greedy Best-First Search※1. In ICAPS17.
+</li>
+<li>Efficient Optimal Search under Expensive Edge Cost Computation※2. In IJCAI17.
+</li>
+<li>Classical Planning in Deep Latent Space: From Unlabeled Images to PDDL (and back)※1. In KEPS17.
 </li>
 </ol>
 </li>
-<li>今後の研究計画
-<ol class="org-ol">
-<li>探索グラフの対称性の検知技術と、小問題分割技術の融合
-</li>
-</ol>
+<li>今後の研究計画 : <b><i>Neural-Symbolic Hybrid System による 次世代AIシステムの研究開発</i></b>
 </li>
 </ol>
 
 </div>
 
-</div>
-
-<div class="resume">
+<div class="smaller">
 <p>
-東京大学博士一年の浅井政太郎と申します。発表を始めます。
+※1 Masataro Asai, Alex Fukunaga
+</p>
+
+<p>
+※2 Masataro Asai, Akihiro Kishimoto, Adi Botea, Radu Marinescu, Elizabeth Daly M, and Spyros Kotoulas
 </p>
 
 </div>
@@ -201,42 +202,6 @@ for the JavaScript code in this tag.
 <div class="figure">
 <p><img src="img/planning.png" alt="planning.png" />
 </p>
-</div>
-
-<div class="resume">
-<p>
-研究テーマのプランニングは、ロボットに、人間の助けを借りず、いかに自律して行動させるかを扱います。
-賢いロボットは、自分の行動の結果をよく先読みして行動する必要があります。
-</p>
-
-<p>
-これをモデル化したプランニング問題は、具体的な行動の列、手順を求める 組合せ最適化問題です。
-</p>
-
-
-<p>
-たとえば、自動プランニング機能付きのレスキューロボットというものを考えましょう。
-プランニング問題のソルバは、ロボットが被災者を助ける正しい手順を出力します。
-</p>
-
-
-<p>
-プランニングは、様々な問題を状態遷移規則を用いて柔軟に表現できます。例えば、
-</p>
-
-<p>
-現実の応用例では「宇宙探査機運行問題」や「企業ネットワーク脆弱性問題」も表現できます。
-</p>
-
-<p>
-このように、プランニングは、難しい問題を汎用性を失わずに解くことを目指します。
-</p>
-
-<p>
-仮に将来、写真のような救助ロボットにプランニングソルバを組み込めば、
-被災者を発見した時に適切な行動を自ら選択できるようになるかもしれません。
-</p>
-
 </div>
 </div>
 </div>
@@ -263,7 +228,7 @@ for the JavaScript code in this tag.
 </div>
 
 <div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 研究業績1 : 査読付き学会論文 ICAPS14</h2>
+<h2 id="sec-3"><span class="section-number-2">3</span> 研究業績1 : 査読付き学会論文 ICAPS14 <b><i>(採択率33%)</i></b></h2>
 <div class="outline-text-2" id="text-3">
 <div class="resume">
 <p>
@@ -290,7 +255,7 @@ for the JavaScript code in this tag.
 </div>
 
 <div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> 研究業績2,3 : 査読付き学会論文 KEPS14, ICAPS15</h2>
+<h2 id="sec-4"><span class="section-number-2">4</span> 研究業績2 : 査読付き学会論文 ICAPS15 <b><i>(採択率33%)</i></b></h2>
 <div class="outline-text-2" id="text-4">
 <div class="resume">
 <p>
@@ -311,7 +276,7 @@ for the JavaScript code in this tag.
 </div>
 
 <div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> 研究業績4 : 査読付き学会論文 AAAI16 ( <b><i>申請後に採択</i></b> )</h2>
+<h2 id="sec-5"><span class="section-number-2">5</span> 研究業績3 : 査読付き学会論文 AAAI16 <b><i>(採択率26%)</i></b></h2>
 <div class="outline-text-2" id="text-5">
 <div class="resume">
 <p>
@@ -331,41 +296,108 @@ for the JavaScript code in this tag.
 </div>
 
 <div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6"><span class="section-number-2">6</span> 今後の研究計画</h2>
+<h2 id="sec-6"><span class="section-number-2">6</span> 研究業績4 : 査読付き論文誌 JAIR <b><i>(採択率12%)</i></b></h2>
 <div class="outline-text-2" id="text-6">
 <div class="resume">
-<p>
-今後の研究計画です。
-今後の研究の目的は、より大規模な問題の求解です。
-その上で2つの課題があります。
-</p>
-<p>
-一つ目は、探索空間の対称性が問題を難しくすることです。
-これは、対称性を破ることで改善します。
-</p>
-<p>
-二つ目は、非対称な構造に対する扱いです。
-これには問題分割を適用します。
-</p>
-<p>
-ただし、これら個別の改善も重要ですが、
-研究の主眼は2つの融合にあります。
-その結果、より大規模な産業利用が可能になります。
-</p>
 
 </div>
 
 
 <div class="figure">
-<p><img src="img/symmetry.png" alt="symmetry.png" />
+<p><img src="img/jair17.png" alt="jair17.png" />
 </p>
 </div>
 </div>
 </div>
 
 <div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7"><span class="section-number-2">7</span> まとめ</h2>
+<h2 id="sec-7"><span class="section-number-2">7</span> 研究業績5 : 学会論文 ICAPS17 <b><i>(採択率33%)</i></b></h2>
 <div class="outline-text-2" id="text-7">
+<div class="resume">
+
+</div>
+
+
+<div class="figure">
+<p><img src="img/icaps17.png" alt="icaps17.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> 研究業績6 : 査読付き学会論文 IJCAI17 <b><i>(採択率25%)</i></b></h2>
+<div class="outline-text-2" id="text-8">
+<div class="resume">
+
+</div>
+
+
+<div class="figure">
+<p><img src="img/ijcai17.png" alt="ijcai17.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> 研究業績7 : 査読付きワークショップ KEPS (採択率60%)</h2>
+<div class="outline-text-2" id="text-9">
+<div class="resume">
+
+</div>
+
+
+<div class="figure">
+<p><img src="img/keps17.png" alt="keps17.png" />
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-9-1" class="outline-3">
+<h3 id="sec-9-1"><span class="section-number-3">9.1</span> 研究業績7 : 査読付きワークショップ KEPS (採択率60%)</h3>
+<div class="outline-text-3" id="text-9-1">
+
+<div class="figure">
+<p><img src="img/keps17-2.png" alt="keps17-2.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-9-2" class="outline-3">
+<h3 id="sec-9-2"><span class="section-number-3">9.2</span> 研究業績7 : 査読付きワークショップ KEPS (採択率60%)</h3>
+<div class="outline-text-3" id="text-9-2">
+
+<div class="figure">
+<p><img src="img/keps17-3.png" alt="keps17-3.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> 今後の研究計画</h2>
+<div class="outline-text-2" id="text-10">
+<div class="resume">
+<p>
+
+</p>
+
+</div>
+
+
+<div class="figure">
+<p><img src="img/keps17-4.png" alt="keps17-4.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11"><span class="section-number-2">11</span> まとめ</h2>
+<div class="outline-text-2" id="text-11">
 <div class="resume">
 <p>
 以上です、ありがとうございました。
@@ -375,9 +407,7 @@ for the JavaScript code in this tag.
 
 <div class="smaller">
 <ol class="org-ol">
-<li>これまでの研究業績 : 査読付き学会論文
-<ol class="org-ol">
-<li><b>難関国際会議</b> <span class="underline">Asai, M.</span> and Fukunaga, A. Fully Automated Cyclic Planning for Large-Scale Manufacturing Domains. In <i>Proceedings of the 24th International Conference of Automated Planning and Scheduling(<b>ICAPS</b>)</i>, June 2014. <b><i>採択率33%</i></b>
+<li><b>難関国際会議(33%)</b> Fully Automated Cyclic Planning for Large-Scale Manufacturing Domains. In ICAPS2014.
 <ol class="org-ol">
 <li>任意の問題から1種類の繰り返し構造を自動で検出
 </li>
@@ -385,13 +415,7 @@ for the JavaScript code in this tag.
 </li>
 </ol>
 </li>
-<li><b>査読付きワークショップ</b> <span class="underline">Asai, M.</span> and Fukunaga, A. Applying Problem Decomposition to Extremely Large Planning Domains. In <i>Proceedings of the 5th Workshop on Knowledge Engineering for Planning and Scheduling(<b>KEPS</b>)</i>, June 2014.
-<ol class="org-ol">
-<li>複数種類の繰り返し構造の検出
-</li>
-</ol>
-</li>
-<li><b>難関国際会議</b> <span class="underline">Asai, M.</span> and Fukunaga, A. Solving Large-Scale Planning Problems by Decomposition and Macro Generation. In <i>Proceedings of the 25th International Conference of Automated Planning and Scheduling(<b>ICAPS</b>)</i>, June 2015.  <b><i>採択率33%</i></b>
+<li><b>難関国際会議(33%)</b> Solving Large-Scale Planning Problems by Decomposition and Macro Generation. In ICAPS2015.
 <ol class="org-ol">
 <li>複数の繰り返し構造をより柔軟・汎用に組み合わせる手法
 </li>
@@ -399,7 +423,7 @@ for the JavaScript code in this tag.
 </li>
 </ol>
 </li>
-<li><b>難関国際会議</b> <span class="underline">Asai, M.</span> and Fukunaga, A. Tiebreaking Strategies for Classical Planning Using A* Search. In <i>Proceedings of the 30th AAAI Conference on Artificial Intelligence(<b>AAAI</b>)</i>, February 2016. <b><i>採択率26%</i></b>
+<li><b>難関国際会議(26%)</b> Tiebreaking Strategies for A* Search: How to Explore the Final Frontier. In AAAI-2016. (JSAI 学生奨励賞)
 <ol class="org-ol">
 <li>コストゼロの辺がグラフ探索に引き起こす問題を解決
 </li>
@@ -407,11 +431,32 @@ for the JavaScript code in this tag.
 </li>
 </ol>
 </li>
-</ol>
-</li>
-<li>今後の研究計画
+<li><b>難関論文誌(12%)</b>   Tie-Breaking Strategies for Cost-Optimal Best First Search. Journal of Artificial Intelligence Research 58 (2017): 67-121.
 <ol class="org-ol">
-<li>探索グラフの対称性の検知技術と、小問題分割技術の融合
+<li>(3.) に加え タイブレーキング と 非最適コスト探索の関連性を指摘
+</li>
+<li>さらに性能向上
+</li>
+</ol>
+</li>
+<li><b>難関国際会議(33%)</b> Exploration Among and Within Plateaus in Greedy Best-First Search. In ICAPS2017.
+<ol class="org-ol">
+<li>非最適コスト探索をフラクタルを用いて改善
+</li>
+<li>プラトー内均一化とプラトー間均一化の直交性を実証
+</li>
+</ol>
+</li>
+<li><b>難関国際会議(25%)</b> Efficient Optimal Search under Expensive Edge Cost Computation. In IJCAI-2017.
+<ol class="org-ol">
+<li>辺コストの動的計算が必要な問題に対して高速な最適アルゴリズムDEA*
+</li>
+</ol>
+</li>
+<li><b>国際ワークショップ(60%)</b> Classical Planning in Deep Latent Space: From Unlabeled Images to PDDL (and back).
+Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
+<ol class="org-ol">
+<li>画像から命題を自動生成して記号的AIで組合せ最適化問題を解き、画像で出力するシステム
 </li>
 </ol>
 </li>
@@ -421,9 +466,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-sec-8" class="outline-2">
-<h2 id="sec-8"><span class="section-number-2">8</span> 付録 古典プランニング問題とは (定義)</h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-sec-12" class="outline-2">
+<h2 id="sec-12"><span class="section-number-2">12</span> 付録 古典プランニング問題とは (定義)</h2>
+<div class="outline-text-2" id="text-12">
 <p>
 アクション集合 A, オブジェクト集合 O, 初期状態 I, ゴールG
 </p>
@@ -454,9 +499,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-sec-9" class="outline-2">
-<h2 id="sec-9"><span class="section-number-2">9</span> 付録 古典プランニングを研究する意義は?</h2>
-<div class="outline-text-2" id="text-9">
+<div id="outline-container-sec-13" class="outline-2">
+<h2 id="sec-13"><span class="section-number-2">13</span> 付録 古典プランニングを研究する意義は?</h2>
+<div class="outline-text-2" id="text-13">
 
 <div class="figure">
 <p><img src="img/classical-meaning.png" alt="classical-meaning.png" />
@@ -465,9 +510,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-sec-10" class="outline-2">
-<h2 id="sec-10"><span class="section-number-2">10</span> 付録 AIの倫理について</h2>
-<div class="outline-text-2" id="text-10">
+<div id="outline-container-sec-14" class="outline-2">
+<h2 id="sec-14"><span class="section-number-2">14</span> 付録 AIの倫理について</h2>
+<div class="outline-text-2" id="text-14">
 <ul class="org-ul">
 <li>研究内容は 漠然とした「AI」のうち <b>グラフ探索</b> の研究
 </li>
@@ -481,9 +526,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-sec-11" class="outline-2">
-<h2 id="sec-11"><span class="section-number-2">11</span> 付録 ディープラーニングとどう違うのか</h2>
-<div class="outline-text-2" id="text-11">
+<div id="outline-container-sec-15" class="outline-2">
+<h2 id="sec-15"><span class="section-number-2">15</span> 付録 ディープラーニングとどう違うのか</h2>
+<div class="outline-text-2" id="text-15">
 <ul class="org-ul">
 <li>機械学習を埋め込むことは可能だ
 </li>
@@ -548,9 +593,9 @@ DLから見て、プランニングは <b>アプリケーション</b>
 </p>
 </div>
 
-<div id="outline-container-sec-11-1" class="outline-3">
-<h3 id="sec-11-1"><span class="section-number-3">11.1</span> 付録 ディープラーニング関連</h3>
-<div class="outline-text-3" id="text-11-1">
+<div id="outline-container-sec-15-1" class="outline-3">
+<h3 id="sec-15-1"><span class="section-number-3">15.1</span> 付録 ディープラーニング関連</h3>
+<div class="outline-text-3" id="text-15-1">
 <p>
 趣味の一環で、Common Lisp から直接使えるGPGPUのライブラリを作成中 (DLを作ってみるため)
 </p>
@@ -567,9 +612,9 @@ DLから見て、プランニングは <b>アプリケーション</b>
 </div>
 </div>
 
-<div id="outline-container-sec-12" class="outline-2">
-<h2 id="sec-12"><span class="section-number-2">12</span> 付録 第五世代コンピュータとの違いは?</h2>
-<div class="outline-text-2" id="text-12">
+<div id="outline-container-sec-16" class="outline-2">
+<h2 id="sec-16"><span class="section-number-2">16</span> 付録 第五世代コンピュータとの違いは?</h2>
+<div class="outline-text-2" id="text-16">
 <p>
 第五世代コンピュータ : 並列推論機械(Prologベース,ハードウェア,OS)
 </p>
@@ -620,9 +665,9 @@ DLから見て、プランニングは <b>アプリケーション</b>
 </div>
 </div>
 
-<div id="outline-container-sec-13" class="outline-2">
-<h2 id="sec-13"><span class="section-number-2">13</span> 付録 Explicit Graph と Implicit Graph との違い</h2>
-<div class="outline-text-2" id="text-13">
+<div id="outline-container-sec-17" class="outline-2">
+<h2 id="sec-17"><span class="section-number-2">17</span> 付録 Explicit Graph と Implicit Graph との違い</h2>
+<div class="outline-text-2" id="text-17">
 <div class="container-fluid">
 <div class="row-fluid">
 <div class="span4">
@@ -692,9 +737,9 @@ Gantz et al. "The digital universe in 2020: Big data, bigger digital shadows, an
 </div>
 
 
-<div id="outline-container-sec-14" class="outline-2">
-<h2 id="sec-14"><span class="section-number-2">14</span> 付録 似たような研究は誰がやっていますか どこでやられていますか</h2>
-<div class="outline-text-2" id="text-14">
+<div id="outline-container-sec-18" class="outline-2">
+<h2 id="sec-18"><span class="section-number-2">18</span> 付録 似たような研究は誰がやっていますか どこでやられていますか</h2>
+<div class="outline-text-2" id="text-18">
 <div class="xlarge">
 <p>
 国内ですか、国外ですか？
@@ -709,9 +754,9 @@ YES NO
 </div>
 </div>
 
-<div id="outline-container-sec-15" class="outline-2">
-<h2 id="sec-15"><span class="section-number-2">15</span> 付録 プランニングはマイナーで大したことのない分野?</h2>
-<div class="outline-text-2" id="text-15">
+<div id="outline-container-sec-19" class="outline-2">
+<h2 id="sec-19"><span class="section-number-2">19</span> 付録 プランニングはマイナーで大したことのない分野?</h2>
+<div class="outline-text-2" id="text-19">
 <p>
 日本にプランニングの研究室がない ≠ 世界で研究室がない
 </p>
@@ -746,9 +791,9 @@ NASA (NASA Ames および NASA/Caltech JPL のそれぞれに20名以上の研�
 </div>
 </div>
 
-<div id="outline-container-sec-16" class="outline-2">
-<h2 id="sec-16"><span class="section-number-2">16</span> 付録 汎用性を失わずに解く?</h2>
-<div class="outline-text-2" id="text-16">
+<div id="outline-container-sec-20" class="outline-2">
+<h2 id="sec-20"><span class="section-number-2">20</span> 付録 汎用性を失わずに解く?</h2>
+<div class="outline-text-2" id="text-20">
 <p>
 <b>No Free Lunch 定理</b>: 最適化アルゴリズムの性能は <b>全問題の平均を取れば</b> 全て同じ
 </p>
@@ -777,9 +822,9 @@ A. NFL定理は確かにそのように主張するが、プランニング分�
 </div>
 </div>
 
-<div id="outline-container-sec-17" class="outline-2">
-<h2 id="sec-17"><span class="section-number-2">17</span> 付録 その研究は&#x2026;</h2>
-<div class="outline-text-2" id="text-17">
+<div id="outline-container-sec-21" class="outline-2">
+<h2 id="sec-21"><span class="section-number-2">21</span> 付録 その研究は&#x2026;</h2>
+<div class="outline-text-2" id="text-21">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1105,9 +1150,9 @@ A. NFL定理は確かにそのように主張するが、プランニング分�
 </table>
 </div>
 
-<div id="outline-container-sec-17-1" class="outline-3">
-<h3 id="sec-17-1"><span class="section-number-3">17.1</span> 国内で誰が似たようなことをやっているか</h3>
-<div class="outline-text-3" id="text-17-1">
+<div id="outline-container-sec-21-1" class="outline-3">
+<h3 id="sec-21-1"><span class="section-number-3">21.1</span> 国内で誰が似たようなことをやっているか</h3>
+<div class="outline-text-3" id="text-21-1">
 <p>
 この専門分野をやっている人は少ないんですが、
 少し離れているが最も似ている研究というと
@@ -1162,15 +1207,15 @@ Toru Ishida (Kyoto U. stopped working in search a long time ago, but for a while
 </div>
 </div>
 
-<div id="outline-container-sec-18" class="outline-2">
-<h2 id="sec-18"><span class="section-number-2">18</span> 付録 学会論文の位置づけ</h2>
-<div class="outline-text-2" id="text-18">
+<div id="outline-container-sec-22" class="outline-2">
+<h2 id="sec-22"><span class="section-number-2">22</span> 付録 学会論文の位置づけ</h2>
+<div class="outline-text-2" id="text-22">
 </div>
 </div>
 
-<div id="outline-container-sec-19" class="outline-2">
-<h2 id="sec-19"><span class="section-number-2">19</span> HTN と ICAPS-15 の違い</h2>
-<div class="outline-text-2" id="text-19">
+<div id="outline-container-sec-23" class="outline-2">
+<h2 id="sec-23"><span class="section-number-2">23</span> HTN と ICAPS-15 の違い</h2>
+<div class="outline-text-2" id="text-23">
 <p>
 HTNは人間が問題分割を行う
 人件費を考えると非常にコストパフォーマンスが悪い
@@ -1179,9 +1224,9 @@ HTNは人間が問題分割を行う
 </div>
 </div>
 
-<div id="outline-container-sec-20" class="outline-2">
-<h2 id="sec-20"><span class="section-number-2">20</span> 付録 Q&amp;A</h2>
-<div class="outline-text-2" id="text-20">
+<div id="outline-container-sec-24" class="outline-2">
+<h2 id="sec-24"><span class="section-number-2">24</span> 付録 Q&amp;A</h2>
+<div class="outline-text-2" id="text-24">
 <ul class="org-ul">
 <li>Q. 探索空間の比較について、なぜ「以前」の数字がスライドによって変わるの?
 </li>
@@ -1191,9 +1236,9 @@ HTNは人間が問題分割を行う
 </div>
 </div>
 
-<div id="outline-container-sec-21" class="outline-2">
-<h2 id="sec-21"><span class="section-number-2">21</span> 付録 今後のキャリアパスは？</h2>
-<div class="outline-text-2" id="text-21">
+<div id="outline-container-sec-25" class="outline-2">
+<h2 id="sec-25"><span class="section-number-2">25</span> 付録 今後のキャリアパスは？</h2>
+<div class="outline-text-2" id="text-25">
 <p>
 研究者押しで押しまくる
 大学あるいは企業の研究者
@@ -1202,24 +1247,24 @@ HTNは人間が問題分割を行う
 </div>
 </div>
 
-<div id="outline-container-sec-22" class="outline-2">
-<h2 id="sec-22"><span class="section-number-2">22</span> 付録 今後の研究計画が、インパクトの少ない今までの延長のように見えるんだけど・・・</h2>
+<div id="outline-container-sec-26" class="outline-2">
+<h2 id="sec-26"><span class="section-number-2">26</span> 付録 今後の研究計画が、インパクトの少ない今までの延長のように見えるんだけど・・・</h2>
 </div>
 
 
-<div id="outline-container-sec-23" class="outline-2">
-<h2 id="sec-23"><span class="section-number-2">23</span> 付録 アドホックな解法に見えるんだけど・・・</h2>
+<div id="outline-container-sec-27" class="outline-2">
+<h2 id="sec-27"><span class="section-number-2">27</span> 付録 アドホックな解法に見えるんだけど・・・</h2>
 </div>
 
 
-<div id="outline-container-sec-24" class="outline-2">
-<h2 id="sec-24"><span class="section-number-2">24</span> 付録 失敗しそうなんだけど・・・</h2>
+<div id="outline-container-sec-28" class="outline-2">
+<h2 id="sec-28"><span class="section-number-2">28</span> 付録 失敗しそうなんだけど・・・</h2>
 </div>
 
 
-<div id="outline-container-sec-25" class="outline-2">
-<h2 id="sec-25"><span class="section-number-2">25</span> 付録?? とにかくまとはずれな質問</h2>
-<div class="outline-text-2" id="text-25">
+<div id="outline-container-sec-29" class="outline-2">
+<h2 id="sec-29"><span class="section-number-2">29</span> 付録?? とにかくまとはずれな質問</h2>
+<div class="outline-text-2" id="text-29">
 <p>
 引き出しを探るタイプの質問
 </p>
@@ -1259,7 +1304,7 @@ time sink
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2017-05-22 月 10:16</p>
+<p class="date">Created: 2017-05-22 月 23:18</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
