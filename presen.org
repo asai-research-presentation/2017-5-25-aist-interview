@@ -62,7 +62,7 @@
 #+END_SMALLER
 #+END_outline-text-1
 
-* 背景 -- AIプランニング
+* 背景 -- AIプランニング                                           :noexport:
 
  #+BEGIN_CONTAINER-FLUID
  #+BEGIN_ROW-FLUID
@@ -164,27 +164,27 @@
  But does he have feelings or can he think? Can he even move around by his own?
  #+END_RESUME
 
-*** 誰?
+* 誰?
 
-  #+BEGIN_CONTAINER-FLUID
-  #+BEGIN_ROW-FLUID
-  #+BEGIN_SPAN6
-  [[png:astro/final]]
-  #+END_SPAN6
-  #+BEGIN_SPAN6
-  [[png:rescue/final]]
-  #+END_SPAN6
-  #+END_ROW-FLUID
-  #+END_CONTAINER-FLUID
+ #+BEGIN_CONTAINER-FLUID
+ #+BEGIN_ROW-FLUID
+ #+BEGIN_SPAN6
+ [[png:astro/final]]
+ #+END_SPAN6
+ #+BEGIN_SPAN6
+ [[png:rescue/final]]
+ #+END_SPAN6
+ #+END_ROW-FLUID
+ #+END_CONTAINER-FLUID
 
- #+BEGIN_RESUME
- No. It requires full human intervention --- it is indeed operated by a
- driver who gets in or by a remote control. It is more like a
- super-sophisticated shovel car.
- #+END_RESUME
+#+BEGIN_RESUME
+No. It requires full human intervention --- it is indeed operated by a
+driver who gets in or by a remote control. It is more like a
+super-sophisticated shovel car.
+#+END_RESUME
 
 
-** 自律行動のための自動プランナ (≠ モータ制御)
+** 自律行動のための自動プランナ (≠ モータ制御)                    :noexport:
 
  [[png:planning/1]]
 
@@ -199,7 +199,7 @@
  プランニング機能のあるロボットは、コレに対して「男性を助けよ」という大まかな指示を受けます。
  #+END_RESUME
 
-** 自律行動のための自動プランナ (≠ モータ制御)
+** 自律行動のための自動プランナ (≠ モータ制御)                    :noexport:
 
  [[png:planning/2]]
 
@@ -438,7 +438,6 @@ DQN = Subsymbolic (DLNN) + 強化学習 (DLNN)
 #+END_ROW-FLUID
 #+END_CONTAINER-FLUID
 
-
 * まとめ
 
 #+BEGIN_RESUME
@@ -466,7 +465,7 @@ DQN = Subsymbolic (DLNN) + 強化学習 (DLNN)
    1. 画像から命題を自動生成して記号的AIで組合せ最適化問題を解き、画像で出力するシステム
 #+END_SMALLER
 
-* 付録
+* 付録                                                             :noexport:
 ** 既存システムとの違い (追加)
 
 /NNで 直接問題を解くシステム/
