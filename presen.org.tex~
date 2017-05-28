@@ -5,26 +5,28 @@
 
 \begin{outline-text-1}
 \begin{center}
-浅井 政太郎 東京大学 総合文化研究科
+浅井 政太郎 東京大学 総合文化研究科 学振DC2
 \end{center}
 
 \textbf{発表要旨}
 
-\begin{expanded}
-\begin{enumerate}
-\item これまでの研究業績
-\begin{enumerate}
-\item Fully Automated Cyclic Planning for Large-Scale Manufacturing Domains※1. In ICAPS14.
-\item Solving Large-Scale Planning Problems by Decomposition and Macro Generation※1. In ICAPS15.
-\item Tiebreaking Strategies for A* Search: How to Explore the Final Frontier※1. In AAAI16. \textbf{\emph{(JSAI 学生奨励賞)}}
-\item Tie-Breaking Strategies for Cost-Optimal Best First Search※1. Journal of Artificial Intelligence Research 58 (2017): 67-121.
-\item Exploration Among and Within Plateaus in Greedy Best-First Search※1. In ICAPS17.
-\item Efficient Optimal Search under Expensive Edge Cost Computation※2. In IJCAI17.
-\item Classical Planning in Deep Latent Space: From Unlabeled Images to PDDL (and back)※1. In KEPS17.
-\end{enumerate}
-\item 今後の研究計画 : \textbf{\emph{Neural-Symbolic Hybrid System による 次世代AIシステムの研究開発}}
-\end{enumerate}
-\end{expanded}
+これまでの研究業績
+
+　Fully Automated Cyclic Planning for Large-Scale Manufacturing Domains※1. \textbf{ICAPS14}.
+
+　Solving Large-Scale Planning Problems by Decomposition and Macro Generation※1. \textbf{ICAPS15}.
+
+　Tiebreaking Strategies for A* Search: How to Explore the Final Frontier※1. \textbf{AAAI16}. \textbf{\emph{(JSAI 学生奨励賞)}}
+
+　Tie-Breaking Strategies for Cost-Optimal Best First Search※1. \textbf{JAIR 58 (2017): 67-121}.
+
+　Exploration Among and Within Plateaus in Greedy Best-First Search※1. \textbf{ICAPS17}.
+
+　Efficient Optimal Search under Expensive Edge Cost Computation※2. \textbf{IJCAI17}.
+
+　Classical Planning in Deep Latent Space: From Unlabeled Images to PDDL (and back)※1. \textbf{KEPS17}.
+
+今後の研究計画, 研究成果の産業応用への抱負
 
 \begin{smaller}
 ※1 Masataro Asai, Alex Fukunaga
@@ -33,15 +35,175 @@
 \end{smaller}
 \end{outline-text-1}
 
-\section{研究テーマ: プランニング(自動行動計画)とは?}
+\section{背景 -- AIプランニング}
 \label{sec-1}
 
+\begin{container-fluid}
+\begin{row-fluid}
+\begin{span6}
+\includegraphics{img/astro/1.png}
+\end{span6}
+\begin{span6}
+\includegraphics{img/rescue/1.png}
+\end{span6}
+\end{row-fluid}
+\end{container-fluid}
+
+\subsection{誰?}
+\label{sec-1-1}
+
+\begin{container-fluid}
+\begin{row-fluid}
+\begin{span6}
+\includegraphics{img/astro/1.png}
+\end{span6}
+\begin{span6}
+\includegraphics{img/rescue/1.png}
+\end{span6}
+\end{row-fluid}
+\end{container-fluid}
+
+\begin{resume}
+And let me introduce these robots.
+The guy in the left is Astro boy.
+\end{resume}
+
+\subsubsection{誰?}
+\label{sec-1-1-1}
+
+\begin{container-fluid}
+\begin{row-fluid}
+\begin{span6}
+\includegraphics{img/astro/2.png}
+\end{span6}
+\begin{span6}
+\includegraphics{img/rescue/1.png}
+\end{span6}
+\end{row-fluid}
+\end{container-fluid}
+
+\begin{resume}
+As you know, he is a famous manga superhero invented by Tezuka Osamu in 50s,
+\end{resume}
+
+\subsubsection{誰?}
+\label{sec-1-1-2}
+
+\begin{container-fluid}
+\begin{row-fluid}
+\begin{span6}
+\includegraphics{img/astro/final.png}
+\end{span6}
+\begin{span6}
+\includegraphics{img/rescue/1.png}
+\end{span6}
+\end{row-fluid}
+\end{container-fluid}
+
+\begin{resume}
+and he can think, hear, speak, act. he also has emotions.
+\end{resume}
+
+\subsubsection{誰?}
+\label{sec-1-1-3}
+
+\begin{container-fluid}
+\begin{row-fluid}
+\begin{span6}
+\includegraphics{img/astro/final.png}
+\end{span6}
+\begin{span6}
+\includegraphics{img/rescue/2.png}
+\end{span6}
+\end{row-fluid}
+\end{container-fluid}
+
+\begin{resume}
+In contrast, the guy in the right is a real robot that is actually in use @ fukuoka prefecture for the rescue purpose..
+His name is T-52 Enryu, developped by a Japanese company Temzak.
+He is huge and powerful -- about 4 meters in height and can carry things which is as heavy as 500kg.
+Well, so, in a sense, he is also a superhero in the real disastrous situation.
+\end{resume}
+
+\subsubsection{誰?}
+\label{sec-1-1-4}
+
+\begin{container-fluid}
+\begin{row-fluid}
+\begin{span6}
+\includegraphics{img/astro/final.png}
+\end{span6}
+\begin{span6}
+\includegraphics{img/rescue/3.png}
+\end{span6}
+\end{row-fluid}
+\end{container-fluid}
+
+\begin{resume}
+But does he have feelings or can he think? Can he even move around by his own?
+\end{resume}
+
+\subsubsection{誰?}
+\label{sec-1-1-5}
+
+\begin{container-fluid}
+\begin{row-fluid}
+\begin{span6}
+\includegraphics{img/astro/final.png}
+\end{span6}
+\begin{span6}
+\includegraphics{img/rescue/final.png}
+\end{span6}
+\end{row-fluid}
+\end{container-fluid}
+
+\begin{resume}
+No. It requires full human intervention --- it is indeed operated by a
+driver who gets in or by a remote control. It is more like a
+super-sophisticated shovel car.
+\end{resume}
 
 
-\includegraphics{img/planning.png}
+\subsection{自律行動のための自動プランナ (≠ モータ制御)}
+\label{sec-1-2}
 
-\section{プランニング(自動行動計画)分野の位置づけ}
-\label{sec-2}
+\includegraphics{img/planning/1.png}
+
+\begin{resume}
+研究テーマのプランニングは、ロボットに、人間の助けを借りず、いかに自律して行動させるかを扱います。
+これをモデル化したプランニング問題は、具体的な行動の列を求める 組合せ最適化問題です。
+
+プランニング問題のタスクは、
+センサーから初期状態とゴールを受け取って、被災者を助ける正しい手順を出力することです。
+
+たとえば、この図では男性が瓦礫に埋まって助けを求めています。
+プランニング機能のあるロボットは、コレに対して「男性を助けよ」という大まかな指示を受けます。
+\end{resume}
+
+\subsection{自律行動のための自動プランナ (≠ モータ制御)}
+\label{sec-1-3}
+
+\includegraphics{img/planning/2.png}
+
+\begin{resume}
+指示の内容には、図のように初期状態とゴール、許可された行動のリストが入っています。
+ロボットは、自動プランニングにより、人間の代わりに適切な行動を組み立てて、ゴールを自動で達成します。
+\end{resume}
+
+\subsection{自律行動のための自動プランナ (≠ モータ制御)}
+\label{sec-1-4}
+
+\includegraphics{img/planning/final.png}
+
+\begin{resume}
+プランニングは汎用な枠組みなので、災害救助以外にも様々な問題に適用することができます。
+現実の応用例では「宇宙探査機運行問題」や「企業ネットワーク脆弱性問題」も表現できます。
+
+このように、プランニングは、難しい問題を汎用性を失わずに解くことを目指します。
+\end{resume}
+
+\subsection{プランニング(自動行動計画)分野の位置づけ}
+\label{sec-1-5}
 
 \begin{resume}
 プランニング分野は、人工知能の専門分野という位置づけで、
@@ -52,8 +214,8 @@
 
 \includegraphics{img/planning2.png}
 
-\section{研究業績1 : 査読付き学会論文 ICAPS14 \textbf{\emph{(採択率33\%)}}}
-\label{sec-3}
+\subsection{業績1: 査読付き国際学会 ICAPS14 \textbf{\emph{(採択率33\%)}}}
+\label{sec-1-6}
 
 \begin{resume}
 研究業績に移ります。
@@ -68,8 +230,8 @@
 
 \includegraphics{img/assemble-icaps14.png}
 
-\section{研究業績2 : 査読付き学会論文 ICAPS15 \textbf{\emph{(採択率33\%)}}}
-\label{sec-4}
+\subsection{業績2: 査読付き国際学会 ICAPS15 \textbf{\emph{(採択率33\%)}}}
+\label{sec-1-7}
 
 \begin{resume}
 続いて二、三本目の業績は、
@@ -80,8 +242,8 @@
 
 \includegraphics{img/assemble-keps14-icaps15.png}
 
-\section{研究業績3 : 査読付き学会論文 AAAI16 \textbf{\emph{(採択率26\%)}}}
-\label{sec-5}
+\subsection{業績3: 査読付き国際学会 AAAI16 \textbf{\emph{(採択率26\%)}}}
+\label{sec-1-8}
 
 \begin{resume}
 最後に、申請後に行った研究が、難関国際学会 AAAI に採択されました。
@@ -91,50 +253,163 @@
 
 \includegraphics{img/aaai16.png}
 
-\section{研究業績4 : 査読付き論文誌 JAIR \textbf{\emph{(採択率12\%)}}}
-\label{sec-6}
+\subsection[業績4: 査読付き論文誌 JAIR \textbf{\emph{(採択率12\%)}}]{業績4: 査読付き論文誌 JAIR \textbf{\emph{(採択率12\%)}}\hfill{}\textsc{スキップ予定}}
+\label{sec-1-9}
 
 \begin{resume}
 \end{resume}
 
 \includegraphics{img/jair17.png}
 
-\section{研究業績5 : 学会論文 ICAPS17 \textbf{\emph{(採択率33\%)}}}
-\label{sec-7}
+\subsection[業績5: 査読付き国際学会 ICAPS17 \textbf{\emph{(採択率33\%)}}]{業績5: 査読付き国際学会 ICAPS17 \textbf{\emph{(採択率33\%)}}\hfill{}\textsc{スキップ予定}}
+\label{sec-1-10}
 
 \begin{resume}
 \end{resume}
 
 \includegraphics{img/icaps17.png}
 
-\section{研究業績6 : 査読付き学会論文 IJCAI17 \textbf{\emph{(採択率25\%)}}}
-\label{sec-8}
+\subsection{業績6: 査読付き国際学会 IJCAI17 \textbf{\emph{(採択率25\%)}}}
+\label{sec-1-11}
 
 \begin{resume}
 \end{resume}
 
 \includegraphics{img/ijcai17.png}
 
-\section{研究業績7 : 査読付きワークショップ KEPS (採択率60\%)}
-\label{sec-9}
+
+\section{産業技術総合研究所で行いたい研究}
+\label{sec-2}
+
+\begin{xlarge}
+Neural-Symbolic複合システムによる
+\begin{center}
+次世代AIシステム
+\end{center}
+\begin{alignright}
+の研究
+\end{alignright}
+\end{xlarge}
+
+\subsection{Q. いま \textbf{\emph{はやり}} のDeep Learningとの違いは?}
+\label{sec-2-1}
+
+A. レイヤが違う
+
+\begin{container-fluid}
+\begin{row-fluid}
+\begin{span6}
+\textbf{機械学習・Neural Networks} == 関数近似
+
+for \textbf{認識・反射}
+\begin{itemize}
+\item 入力 は \textbf{Subsymbolic} (連続値)
+
+画像、音声、非構造化テキスト:
+\item \textbf{感覚的知能}:
+
+　 \textbf{\emph{反応}, \emph{直後} の行動の決定}
+\begin{smaller}
+\textbf{パブロフの犬} : 餌を認知→よだれ
+
+\textbf{自動運転} : 赤信号,人 → 止まる.
+
+\textbf{翻訳} : 文章 → 文章
+
+\textbf{囲碁局面の評価関数} : 局面 → 勝率
+\end{smaller}
+\begin{larger}
+☺ 効率よく 1-to-1 mapping
+
+☹ 単純作業
+\end{larger}
+\end{itemize}
+\end{span6}
+\begin{span6}
+\textbf{推論・探索}
+
+for \textbf{プランニング・ゲーム・定理証明}
+\begin{itemize}
+\item 入出力は \textbf{Symbolic}
+
+論理 オブジェクト ルール
+\item \textbf{論理・推論による知能:}
+
+　 \textbf{\emph{未来に渡る} 戦略の決定}
+
+　 (戦略 = 行動の \textbf{列や木})
+\begin{smaller}
+\textbf{レスキューロボ} : ゴール = 被災者生存
+
+\textbf{証明器} : ゴール = QED
+
+\textbf{コンパイラ} : 命令列の生成
+
+\textbf{囲碁,将棋} : ゴール = 勝利
+\end{smaller}
+\begin{larger}
+☺ 順序制約+複雑な作業
+\end{larger}
+\end{itemize}
+\end{span6}
+\end{row-fluid}
+\end{container-fluid}
+
+\begin{itemize}
+\item AlphaGo = Subsymbolic (DLNNによる評価関数) + Symbolic (MCTSによる探索)
+\end{itemize}
+
+\subsection{既存の有名システム}
+\label{sec-2-2}
+
+AlphaGo = Subsymbolic (NNによる評価関数) + Symbolic (MCTSによる探索)
+\begin{itemize}
+\item ただし \textbf{ドメイン依存} -- 囲碁に特化, "マス目"や"石"といった概念をハードコード
+\item \textbf{膨大な棋譜が必要} --- 運用データがない環境(e.g.火星)には適用不能
+\item \textbf{\emph{人って模範解答がないと行動できませんか?}} \textbf{真の自律機械は前例無しでも行動可能}
+\end{itemize}
+
+DQN = Subsymbolic (DLNN) + 強化学習 (DLNN)
+
+様々な Atari Game につかえる汎用フレームワーク (Invader, Packman…) だが
+\begin{itemize}
+\item RLのActing: 学習したpolicyに従ってgreedyに行動
+\item Atariゲームは \textbf{脊髄反射で生き残ることが可能} → \textbf{複雑な論理思考はいらない!}
+\end{itemize}
+
+\subsection{記号的AIによる論理推論の重要性}
+\label{sec-2-3}
+
+\includegraphics{img/lecun.png}
+
+\subsection{業績7: 査読付きワークショップ KEPS (採択率60\%)}
+\label{sec-2-4}
 
 \begin{resume}
 \end{resume}
 
 \includegraphics{img/keps17.png}
 
-\subsection{研究業績7 : 査読付きワークショップ KEPS (採択率60\%)}
-\label{sec-9-1}
+\subsubsection{研究業績7 : 査読付きワークショップ KEPS (採択率60\%)}
+\label{sec-2-4-1}
 
 \includegraphics{img/keps17-2.png}
 
-\subsection{研究業績7 : 査読付きワークショップ KEPS (採択率60\%)}
-\label{sec-9-2}
+\subsubsection{SAE のもっとちゃんとした解説}
+\label{sec-2-4-2}
+
+\includegraphics{img/sae/state-ae.png}
+
+\includegraphics{img/sae/gumbel.png}
+
+\subsubsection{研究業績7 : 査読付きワークショップ KEPS (採択率60\%)}
+\label{sec-2-4-3}
 
 \includegraphics{img/keps17-3.png}
 
-\section{今後の研究計画}
-\label{sec-10}
+
+\subsection{今後の研究計画}
+\label{sec-2-5}
 
 \begin{resume}
 
@@ -142,8 +417,36 @@
 
 \includegraphics{img/keps17-4.png}
 
+\section{研究成果の産業応用}
+\label{sec-3}
+
+\begin{center}
+\textbf{記号的推論によりブレークスルーをもたらしうる}
+\end{center}
+
+
+\begin{container-fluid}
+\begin{row-fluid}
+\begin{span6}
+\textbf{ピックアップロボ以上の産業用ロボ}
+
+--- 画像 → 論理表現 → 記号的推論 → 行動決定
+
+--- 動的な環境や目標に自動で対応できる
+
+\textbf{人工無能以上のチャットボット}
+
+--- テキスト → 論理表現 → 記号的推論 → 意図推定 → 返答
+\end{span6}
+\begin{span6}
+\includegraphics{img/static/hal-speaking.jpg}
+\end{span6}
+\end{row-fluid}
+\end{container-fluid}
+
+
 \section{まとめ}
-\label{sec-11}
+\label{sec-4}
 
 \begin{resume}
 以上です、ありがとうございました。
@@ -163,13 +466,11 @@
 \end{enumerate}
 \item \textbf{難関国際会議(26\%)} Tiebreaking Strategies for A* Search: How to Explore the Final Frontier. In AAAI-2016. (JSAI 学生奨励賞)
 \begin{enumerate}
-\item コストゼロの辺がグラフ探索に引き起こす問題を解決
-\item \textbf{コストゼロの辺を含むグラフ探索全てに影響 (探索空間 10$^{\text{6}}$ → 10$^{\text{88}}$)}
+\item コストゼロの辺がグラフ探索に引き起こす問題を解決 \textbf{(探索空間 10$^{\text{6}}$ → 10$^{\text{88}}$)}
 \end{enumerate}
 \item \textbf{難関論文誌(12\%)}   Tie-Breaking Strategies for Cost-Optimal Best First Search. Journal of Artificial Intelligence Research 58 (2017): 67-121.
 \begin{enumerate}
-\item (3.) に加え タイブレーキング と 非最適コスト探索の関連性を指摘
-\item さらに性能向上
+\item (3.) に加え タイブレーキング と 非最適コスト探索の関連性を指摘, さらに性能向上
 \end{enumerate}
 \item \textbf{難関国際会議(33\%)} Exploration Among and Within Plateaus in Greedy Best-First Search. In ICAPS2017.
 \begin{enumerate}
@@ -188,8 +489,22 @@ Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
 \end{enumerate}
 \end{smaller}
 
-\section{付録 古典プランニング問題とは (定義)}
-\label{sec-12}
+\section{付録}
+\label{sec-5}
+\subsection{NeuroSolver との違い}
+\label{sec-5-1}
+
+\subsection{neural heuristic との違い}
+\label{sec-5-2}
+
+\subsection{LfO との違い}
+\label{sec-5-3}
+
+\subsection{プランの評価手法}
+\label{sec-5-4}
+
+\subsection{付録 古典プランニング問題とは (定義)}
+\label{sec-5-5}
 
 アクション集合 A, オブジェクト集合 O, 初期状態 I, ゴールG
 
@@ -205,13 +520,13 @@ Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
 
 \textbf{終了判定}: s ⊇ G ならば ゴール達成
 
-\section{付録 古典プランニングを研究する意義は?}
-\label{sec-13}
+\subsection{付録 古典プランニングを研究する意義は?}
+\label{sec-5-6}
 
 \includegraphics{img/classical-meaning.png}
 
-\section{付録 AIの倫理について}
-\label{sec-14}
+\subsection{付録 AIの倫理について}
+\label{sec-5-7}
 
 \begin{itemize}
 \item 研究内容は 漠然とした「AI」のうち \textbf{グラフ探索} の研究
@@ -220,8 +535,8 @@ Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
 \item 悪用の問題はある。しかし、自分としては、災害救助ロボットなど、人道的な応用を目指している
 \end{itemize}
 
-\section{付録 ディープラーニングとどう違うのか}
-\label{sec-15}
+\subsection{付録 ディープラーニングとどう違うのか}
+\label{sec-5-8}
 
 \begin{itemize}
 \item 機械学習を埋め込むことは可能だ
@@ -262,7 +577,7 @@ DLから見て、プランニングは \textbf{アプリケーション}
 両者の組み合わせは機会があればやってみたい
 
 \subsection{付録 ディープラーニング関連}
-\label{sec-15-1}
+\label{sec-5-9}
 
 趣味の一環で、Common Lisp から直接使えるGPGPUのライブラリを作成中 (DLを作ってみるため)
 
@@ -272,8 +587,8 @@ DLから見て、プランニングは \textbf{アプリケーション}
 \item OpenCLのメモリ管理を Lisp GC に埋め込み
 \end{itemize}
 
-\section{付録 第五世代コンピュータとの違いは?}
-\label{sec-16}
+\subsection{付録 第五世代コンピュータとの違いは?}
+\label{sec-5-10}
 
 第五世代コンピュータ : 並列推論機械(Prologベース,ハードウェア,OS)
 
@@ -293,8 +608,8 @@ Prologベース & C/C++で高度に最適化されたプログラム\\
 
 仮に \textbf{当時のソフトウェア} を \textbf{現在のハードウェア} で動かしたとしても、 \textbf{100問も解けないだろう}
 
-\section{付録 Explicit Graph と Implicit Graph との違い}
-\label{sec-17}
+\subsection{付録 Explicit Graph と Implicit Graph との違い}
+\label{sec-5-11}
 
 
 \begin{container-fluid}
@@ -333,9 +648,8 @@ AI and Web の分野など
 Gantz et al. "The digital universe in 2020: Big data, bigger digital shadows, and biggest growth in the far east." IDC iView: IDC Analyze the Future 2007 (2012): 1-16.
 \end{note}
 
-
-\section{付録 似たような研究は誰がやっていますか どこでやられていますか}
-\label{sec-18}
+\subsection{付録 似たような研究は誰がやっていますか どこでやられていますか}
+\label{sec-5-12}
 
 
 \begin{xlarge}
@@ -345,8 +659,8 @@ YES NO
 \end{center}
 \end{xlarge}
 
-\section{付録 プランニングはマイナーで大したことのない分野?}
-\label{sec-19}
+\subsection{付録 プランニングはマイナーで大したことのない分野?}
+\label{sec-5-13}
 
 日本にプランニングの研究室がない ≠ 世界で研究室がない
 
@@ -364,8 +678,8 @@ NASA (NASA Ames および NASA/Caltech JPL のそれぞれに20名以上の研�
 
 指導教員は NASA JPL AI Lab の元メンバー
 
-\section{付録 汎用性を失わずに解く?}
-\label{sec-20}
+\subsection{付録 汎用性を失わずに解く?}
+\label{sec-5-14}
 
 \textbf{No Free Lunch 定理}: 最適化アルゴリズムの性能は \textbf{全問題の平均を取れば} 全て同じ
 
@@ -381,8 +695,8 @@ A. NFL定理は確かにそのように主張するが、プランニング分�
 
 従って、 \textbf{全問題の平均を取れば} という前提が成り立たない。
 
-\section{付録 その研究は\ldots{}}
-\label{sec-21}
+\subsection{付録 その研究は\ldots{}}
+\label{sec-5-15}
 
 
 
@@ -425,7 +739,7 @@ AAAI16 &  & 三人中 & 同コストのノードの分類 & 70年代からの定
 \end{center}
 
 \subsection{国内で誰が似たようなことをやっているか}
-\label{sec-21-1}
+\label{sec-5-16}
 
 この専門分野をやっている人は少ないんですが、
 少し離れているが最も似ている研究というと
@@ -456,45 +770,42 @@ Katsutoshi Hirayama, Kobe university  (constraint optimization, CSP, distributed
 
 Toru Ishida (Kyoto U. stopped working in search a long time ago, but for a while, he was the leader in A*-related search methods in Japan; coauthored some papers with Korf).
 
-\section{付録 学会論文の位置づけ}
-\label{sec-22}
+\subsection{付録 学会論文の位置づけ}
+\label{sec-5-17}
 
-\section{HTN と ICAPS-15 の違い}
-\label{sec-23}
+\subsection{HTN と ICAPS-15 の違い}
+\label{sec-5-18}
 
 HTNは人間が問題分割を行う
 人件費を考えると非常にコストパフォーマンスが悪い
 → 自動で問題分割
 
-\section{付録 Q\&A}
-\label{sec-24}
+\subsection{付録 Q\&A}
+\label{sec-5-19}
 
 \begin{itemize}
 \item Q. 探索空間の比較について、なぜ「以前」の数字がスライドによって変わるの?
 \item A. 論文の中で使った実験設定が異なるからです。
 \end{itemize}
 
-\section{付録 今後のキャリアパスは？}
-\label{sec-25}
+\subsection{付録 今後のキャリアパスは？}
+\label{sec-5-20}
 
 研究者押しで押しまくる
 大学あるいは企業の研究者
 迷うことなくパッと答える
 
-\section{付録 今後の研究計画が、インパクトの少ない今までの延長のように見えるんだけど・・・}
-\label{sec-26}
+\subsection{付録 今後の研究計画が、インパクトの少ない今までの延長のように見えるんだけど・・・}
+\label{sec-5-21}
 
+\subsection{付録 アドホックな解法に見えるんだけど・・・}
+\label{sec-5-22}
 
-\section{付録 アドホックな解法に見えるんだけど・・・}
-\label{sec-27}
+\subsection{付録 失敗しそうなんだけど・・・}
+\label{sec-5-23}
 
-
-\section{付録 失敗しそうなんだけど・・・}
-\label{sec-28}
-
-
-\section{付録?? とにかくまとはずれな質問}
-\label{sec-29}
+\subsection{付録?? とにかくまとはずれな質問}
+\label{sec-5-24}
 
 引き出しを探るタイプの質問
 

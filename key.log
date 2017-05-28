@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.5.15)  22 MAY 2017 23:44
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.5.15)  29 MAY 2017 01:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -714,224 +714,353 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <20.74> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
-
-Overfull \hbox (1.32973pt too wide) in paragraph at lines 27--27
-[]\OT1/ptm/m/n/20.74 Fully Au-to-mated Cyclic Plan-ning for Large-Scale Man-u-f
-ac-tur-ing Do-mains
- []
-
-
-Overfull \hbox (8.94194pt too wide) in paragraph at lines 27--27
-[]\OT1/ptm/m/n/20.74 Solving Large-Scale Plan-ning Prob-lems by De-com-po-si-ti
-on and Macro Gen-
- []
-
 LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <20.74> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 27.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 19.
 LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <20.74> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 27.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 19.
+
 
 LaTeX Font Warning: Font shape `JT1/gt/bx/it' undefined
-(Font)              using `JT1/gt/bx/n' instead on input line 27.
+(Font)              using `JT1/gt/bx/n' instead on input line 19.
 
 
 LaTeX Font Warning: Font shape `JY1/gt/bx/it' undefined
-(Font)              using `JY1/gt/bx/n' instead on input line 27.
+(Font)              using `JY1/gt/bx/n' instead on input line 19.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 27.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 19.
+
+Overfull \hbox (1.16042pt too wide) in paragraph at lines 21--22
+[]\JY1/mc/m/n/20.74 　 \OT1/ptm/m/n/20.74 Tie-Breaking Strate-gies for Cost-Opt
+imal Best First Search \JY1/mc/m/n/20.74 ※ \OT1/ptm/m/n/20.74 1. \OT1/ptm/b/n/
+20.74 JAIR 58 (2017):
+ []
+
 [1
 
 ]
-Overfull \hbox (6.38979pt too wide) in paragraph at lines 27--27
-[]\OT1/ptm/m/n/20.74 Classical Plan-ning in Deep La-tent Space: From Un-la-bele
-d Im-ages to PDDL
+Overfull \hbox (30.2396pt too wide) in paragraph at lines 23--24
+[]\JY1/mc/m/n/20.74 　 \OT1/ptm/m/n/20.74 Ex-plo-ration Among and Within Platea
+us in Greedy Best-First Search \JY1/mc/m/n/20.74 ※ \OT1/ptm/m/n/20.74 1. \OT1/
+ptm/b/n/20.74 ICAPS17\OT1/ptm/m/n/20.74 . 
  []
 
-LaTeX Font Info:    Font shape `JT1/gt/bx/it' in size <20.74> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 27.
-LaTeX Font Info:    Font shape `JY1/gt/bx/it' in size <20.74> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 27.
 [2]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 36.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 36.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
-File: img/planning.png Graphic file (type bmp)
- <img/planning.png> [3
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+File: img/astro/1.png Graphic file (type bmp)
+ <img/astro/1.png>
+File: img/rescue/1.png Graphic file (type bmp)
+ <img/rescue/1.png> [3
 
 ]
+File: img/astro/1.png Graphic file (type bmp)
+ <img/astro/1.png>
+File: img/rescue/1.png Graphic file (type bmp)
+
+<img/rescue/1.png> [4
+
+]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 71.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 71.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 71.
+File: img/astro/2.png Graphic file (type bmp)
+ <img/astro/2.png>
+File: img/rescue/1.png Graphic file (type bmp)
+ <img/rescue/1.png> [5
+
+]
+File: img/astro/final.png Graphic file (type bmp)
+
+<img/astro/final.png>
+File: img/rescue/1.png Graphic file (type bmp)
+ <img/rescue/1.png> [6
+
+]
+File: img/astro/final.png Graphic file (type bmp)
+ <img/astro/final.png>
+File: img/rescue/2.png Graphic file (type bmp)
+
+<img/rescue/2.png> [7
+
+]
+File: img/astro/final.png Graphic file (type bmp)
+ <img/astro/final.png>
+File: img/rescue/3.png Graphic file (type bmp)
+ <img/rescue/3.png> [8
+
+]
+File: img/astro/final.png Graphic file (type bmp)
+
+<img/astro/final.png>
+File: img/rescue/final.png Graphic file (type bmp)
+ <img/rescue/final.png> [9
+
+]
+File: img/planning/1.png Graphic file (type bmp)
+ <img/planning/1.png> [10
+
+]
+Overfull \vbox (1.52205pt too high) has occurred while \output is active []
+
+
+[11] [12]
+File: img/planning/2.png Graphic file (type bmp)
+ <img/planning/2.png> [13
+
+]
+Overfull \vbox (1.52205pt too high) has occurred while \output is active []
+
+
+[14] [15]
+File: img/planning/final.png Graphic file (type bmp)
+ <img/planning/final.png> [16
+
+]
+Overfull \vbox (1.52205pt too high) has occurred while \output is active []
+
+
+[17] [18]
 File: img/planning2.png Graphic file (type bmp)
- <img/planning2.png> [4
+ <img/planning2.png> [19
 
-] [5]
-LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 55.
-LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 55.
-LaTeX Font Info:    Font shape `JT1/gt/bx/it' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 55.
-LaTeX Font Info:    Font shape `JY1/gt/bx/it' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 55.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 55.
+] [20]
+LaTeX Font Info:    Font shape `JT1/gt/bx/it' in size <20.74> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 217.
+LaTeX Font Info:    Font shape `JY1/gt/bx/it' in size <20.74> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 217.
 File: img/assemble-icaps14.png Graphic file (type bmp)
-
-<img/assemble-icaps14.png> [6
+ <img/assemble-icaps14.png> [21
 
 ]
 File: img/assemble-keps14-icaps15.png Graphic file (type bmp)
- <img/assemble-keps14-icaps15.png> [7
+
+<img/assemble-keps14-icaps15.png> [22
 
 ]
 File: img/aaai16.png Graphic file (type bmp)
+ <img/aaai16.png> [23
 
-<img/aaai16.png> [8
+]
 
-] [9]
+LaTeX Font Warning: Font shape `JT1/mc/bx/sc' undefined
+(Font)              using `JT1/mc/bx/n' instead on input line 256.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/bx/sc' undefined
+(Font)              using `JY1/mc/bx/n' instead on input line 256.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <20.74> not available
+(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 256.
 File: img/jair17.png Graphic file (type bmp)
- <img/jair17.png> [10
+<img/jair17.png> [24
 
 ]
+LaTeX Font Info:    Font shape `JT1/mc/bx/sc' in size <20.74> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 264.
+LaTeX Font Info:    Font shape `JY1/mc/bx/sc' in size <20.74> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 264.
 File: img/icaps17.png Graphic file (type bmp)
- <img/icaps17.png> [11
+ <img/icaps17.png> [25
 
-] [12]
+] [26]
 File: img/ijcai17.png Graphic file (type bmp)
-
-<img/ijcai17.png> [13
-
-] [14]
-File: img/keps17.png Graphic file (type bmp)
- <img/keps17.png> [15
-
-] [16]
-File: img/keps17-2.png Graphic file (type bmp)
- <img/keps17-2.png>
-[17
+ <img/ijcai17.png> [27
 
 ]
-File: img/keps17-3.png Graphic file (type bmp)
- <img/keps17-3.png> [18
+[28]
+LaTeX Font Info:    Calculating math sizes for size <35.83> on input line 291.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <17.915> not available
+(Font)              size <17.28> substituted on input line 291.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <35.83> not available
+(Font)              size <24.88> substituted on input line 291.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <17.915> not available
+(Font)              size <17.28> substituted on input line 291.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <35.83> not available
+(Font)              size <24.88> substituted on input line 291.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <17.915> not available
+(Font)              size <17.28> substituted on input line 291.
+
+[29
 
 ]
-File: img/keps17-4.png Graphic file (type bmp)
- <img/keps17-4.png> [19
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 356.
 
-] [20]
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 154.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 154.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 154.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 157.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 157.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 157.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 157.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 157.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 157.
- [21
-
-] [22] [23
-
-]
-File: img/classical-meaning.png Graphic file (type bmp)
-
-<img/classical-meaning.png> [24
-
-]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 215.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <20.74> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 215.
- [25
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 356.
+Missing character: There is no ^^e2 in font ptmr7t!
+Missing character: There is no ^^98 in font ptmr7t!
+Missing character: There is no ^^ba in font ptmr7t!
+Missing character: There is no ^^e2 in font ptmr7t!
+Missing character: There is no ^^98 in font ptmr7t!
+Missing character: There is no ^^b9 in font ptmr7t!
+Missing character: There is no ^^e2 in font ptmr7t!
+Missing character: There is no ^^98 in font ptmr7t!
+Missing character: There is no ^^ba in font ptmr7t!
+ [30
+
+] [31
 
 ]
-Underfull \hbox (badness 2600) in paragraph at lines 252--252
+File: img/lecun.png Graphic file (type bmp)
+
+<img/lecun.png> [32
+
+]
+File: img/keps17.png Graphic file (type bmp)
+ <img/keps17.png> [33
+
+] [34]
+File: img/keps17-2.png Graphic file (type bmp)
+ <img/keps17-2.png> [35
+
+]
+File: img/sae/state-ae.png Graphic file (type bmp)
+
+<img/sae/state-ae.png>
+File: img/sae/gumbel.png Graphic file (type bmp)
+ <img/sae/gumbel.png> [36
+
+] [37]
+File: img/keps17-3.png Graphic file (type bmp)
+ <img/keps17-3.png>
+[38
+
+]
+File: img/keps17-4.png Graphic file (type bmp)
+ <img/keps17-4.png> [39
+
+] [40]
+File: img/static/hal-speaking.jpg Graphic file (type bmp)
+ <img/static/hal-speaking.jpg> [41
+
+]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 460.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 460.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 460.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 460.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 460.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 460.
+ [42
+
+]
+[43] [44
+
+] [45
+
+] [46
+
+] [47
+
+] [48
+
+] [49
+
+]
+File: img/classical-meaning.png Graphic file (type bmp)
+ <img/classical-meaning.png> [50
+
+] [51
+
+]
+Underfull \hbox (badness 2600) in paragraph at lines 569--569
 []\OT1/ptm/m/n/20.74 ICAPS14,15 \JY1/mc/m/n/20.74 の手法を使
  []
 
-[26
+[52
 
-] [27] [28
+] [53
 
-] [29
+] [54
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 327--327
+Underfull \hbox (badness 10000) in paragraph at lines 644--644
 []\JY1/mc/m/n/20.74 グラフ全体がメモリ
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 327--327
+Underfull \hbox (badness 1248) in paragraph at lines 644--644
 \JY1/mc/m/n/20.74 は二次記憶 \OT1/ptm/m/n/20.74 (\JY1/mc/m/n/20.74 ～数ゼタ
  []
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 327--327
+Underfull \hbox (badness 1533) in paragraph at lines 644--644
 []\JY1/mc/m/n/20.74 参考\OT1/ptm/m/n/20.74 : 2012 \JY1/mc/m/n/20.74 年の全世
  []
 
 
-Underfull \hbox (badness 5771) in paragraph at lines 327--327
+Underfull \hbox (badness 5771) in paragraph at lines 644--644
 \JY1/mc/m/n/20.74 界のデジタルデ ータ\OT1/ptm/m/n/20.74 :
  []
 
 
-Underfull \hbox (badness 2582) in paragraph at lines 327--327
+Underfull \hbox (badness 2582) in paragraph at lines 644--644
 []\JY1/gt/m/n/20.74 プランニングにおける探索グラフ \OT1/ptm/m/n/20.74 : Im-plic
 it
  []
 
-[30
+[55
 
-] [31] [32
+] [56
 
-] [33
+] [57
 
-] [34
+] [58
 
 ]
-Overfull \hbox (785.31195pt too wide) in paragraph at lines 388--423
+Overfull \hbox (785.31195pt too wide) in paragraph at lines 704--739
  [] 
  []
 
-[35
+[59
 
 ]
 Overfull \vbox (403.99557pt too high) has occurred while \output is active []
 
 
-[36] [37
+[60] [61
 
-] [38] [39
+] [62] [63
 
-] [40
+] [64
 
-] [41
+] [65
 
-] [42
+] [66
 
-] [43
+] [67
 
-] [44
+] [68
 
-] [45
+] [69
 
-]) [46
+]) [70
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 23.
@@ -941,17 +1070,21 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 23.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 23.
 
 
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 10.95pt have occurred.
+
+
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 23.
  ) 
 Here is how much of TeX's memory you used:
- 15108 strings out of 493723
- 268499 string characters out of 6152570
- 349412 words of memory out of 5000000
- 18310 multiletter control sequences out of 15000+600000
- 29654 words of font info for 105 fonts, out of 8000000 for 9000
+ 15192 strings out of 493723
+ 270000 string characters out of 6152570
+ 352122 words of memory out of 5000000
+ 18380 multiletter control sequences out of 15000+600000
+ 32889 words of font info for 118 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  72i,8n,51p,447b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on key.dvi (46 pages, 48220 bytes).
+Output written on key.dvi (70 pages, 70000 bytes).

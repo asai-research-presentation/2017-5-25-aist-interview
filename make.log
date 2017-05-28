@@ -3,18 +3,46 @@ make[1]: ディレクトリ '/home/guicho/repos/presentations/2017-5-25-aist-int
 make -C img
 make -C css
 make -C scripts
-make[2]: ディレクトリ '/home/guicho/repos/presentations/2017-5-25-aist-interview/img' に入ります
+make[2]: ディレクトリ '/home/guicho/repos/presentations/2017-5-25-aist-interview/css' に入ります
+sass --update .
 make[2]: ディレクトリ '/home/guicho/repos/presentations/2017-5-25-aist-interview/scripts' に入ります
 make[2]: 'all' に対して行うべき事はありません.
 make[2]: ディレクトリ '/home/guicho/repos/presentations/2017-5-25-aist-interview/scripts' から出ます
 scripts/org-html.sh presen.org presen.org.html
-make[2]: ディレクトリ '/home/guicho/repos/presentations/2017-5-25-aist-interview/css' に入ります
-sass --update .
+make[2]: ディレクトリ '/home/guicho/repos/presentations/2017-5-25-aist-interview/img' に入ります
+scripts/org-latex.sh presen.org presen.org.tex
 make[2]: 'all' に対して行うべき事はありません.
 make[2]: ディレクトリ '/home/guicho/repos/presentations/2017-5-25-aist-interview/img' から出ます
 Loading /home/guicho/repos/presentations/2017-5-25-aist-interview/scripts/compile-org-html.el (source)...
+Loading /home/guicho/repos/presentations/2017-5-25-aist-interview/scripts/compile-org-latex.el (source)...
 make[2]: ディレクトリ '/home/guicho/repos/presentations/2017-5-25-aist-interview/css' から出ます
+Saving file /home/guicho/repos/presentations/2017-5-25-aist-interview/presen.org.tex...
 Saving file /home/guicho/repos/presentations/2017-5-25-aist-interview/presen.org.html...
+Wrote /home/guicho/repos/presentations/2017-5-25-aist-interview/presen.org.tex
+latexmk/latexmk.pl -r latexmk/rc_ja.pl \
+	   -latexoption="-halt-on-error" \
+	   -pdfdvi \
+	   -bibtex \
+	   key.tex
+latexmk/latexmk.pl -r latexmk/rc_ja.pl \
+	   -latexoption="-halt-on-error" \
+	   -pdfdvi \
+	   -bibtex \
+	   nokey.tex
+latexmk/latexmk.pl -r latexmk/rc_ja.pl \
+	   -latexoption="-halt-on-error" \
+	   -pdfdvi \
+	   -bibtex \
+	   resume.tex
 Wrote /home/guicho/repos/presentations/2017-5-25-aist-interview/presen.org.html
 cp -f presen.org.html index.html
+Latexmk: This is Latexmk, John Collins, 10 Nov 2013, version: 4.39.
+**** Report bugs etc to John Collins <collins at phys.psu.edu>. ****
+Latexmk: This is Latexmk, John Collins, 10 Nov 2013, version: 4.39.
+**** Report bugs etc to John Collins <collins at phys.psu.edu>. ****
+Latexmk: This is Latexmk, John Collins, 10 Nov 2013, version: 4.39.
+**** Report bugs etc to John Collins <collins at phys.psu.edu>. ****
+Latexmk: All targets (resume.dvi resume.pdf) are up-to-date
+Latexmk: All targets (nokey.pdf nokey.dvi) are up-to-date
+Latexmk: All targets (key.pdf key.dvi) are up-to-date
 make[1]: ディレクトリ '/home/guicho/repos/presentations/2017-5-25-aist-interview' から出ます
