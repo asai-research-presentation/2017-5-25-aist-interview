@@ -369,12 +369,11 @@ INPUT img/keps17.xbb
 INPUT ./img/keps17-2.png
 INPUT img/keps17-2.png
 INPUT img/keps17-2.xbb
+INPUT ./img/keps17.png
+INPUT img/keps17.png
 INPUT ./img/sae/state-ae.png
 INPUT img/sae/state-ae.png
 INPUT img/sae/state-ae.xbb
-INPUT ./img/sae/gumbel.png
-INPUT img/sae/gumbel.png
-INPUT img/sae/gumbel.xbb
 INPUT ./img/keps17-3.png
 INPUT img/keps17-3.png
 INPUT img/keps17-3.xbb
@@ -391,7 +390,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT ./img/classical-meaning.png
-INPUT img/classical-meaning.png
-INPUT img/classical-meaning.xbb
-INPUT key.aux
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT ./img/static/gravity-m.jpg
+INPUT img/static/gravity-m.jpg
+INPUT img/static/gravity-m.xbb
+INPUT extractbb -O img/plan.png
+INPUT extractbb -O img/plan.png

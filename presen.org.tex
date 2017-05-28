@@ -282,7 +282,10 @@ super-sophisticated shovel car.
 \label{sec-2}
 
 \begin{xlarge}
-Neural-Symbolic複合システムによる
+Neural-Symbolic複合システム
+\end{xlarge}
+による
+\begin{xlarge}
 \begin{center}
 次世代AIシステム
 \end{center}
@@ -390,40 +393,40 @@ DQN = Subsymbolic (DLNN) + 強化学習 (DLNN)
 
 \includegraphics{img/keps17.png}
 
-\subsubsection{研究業績7 : 査読付きワークショップ KEPS (採択率60\%)}
+\subsubsection{研究業績7 : 査読付きワークショップ KEPS}
 \label{sec-2-4-1}
 
 \includegraphics{img/keps17-2.png}
 
-\subsubsection{SAE のもっとちゃんとした解説}
+\subsubsection{業績7: 査読付きワークショップ KEPS (採択率60\%)}
 \label{sec-2-4-2}
+
+\begin{resume}
+\end{resume}
+
+\includegraphics{img/keps17.png}
+
+\subsubsection{Gumbel-Softmax}
+\label{sec-2-4-3}
 
 \includegraphics{img/sae/state-ae.png}
 
-\includegraphics{img/sae/gumbel.png}
-
-\subsubsection{研究業績7 : 査読付きワークショップ KEPS (採択率60\%)}
-\label{sec-2-4-3}
+\subsubsection{研究業績7 : 査読付きワークショップ KEPS}
+\label{sec-2-4-4}
 
 \includegraphics{img/keps17-3.png}
 
-
-\subsection{今後の研究計画}
-\label{sec-2-5}
-
-\begin{resume}
-
-\end{resume}
+\section{今後の研究計画}
+\label{sec-3}
 
 \includegraphics{img/keps17-4.png}
 
 \section{研究成果の産業応用}
-\label{sec-3}
+\label{sec-4}
 
 \begin{center}
-\textbf{記号的推論によりブレークスルーをもたらしうる}
+\textbf{記号的推論により様々な分野にブレークスルーをもたらす}
 \end{center}
-
 
 \begin{container-fluid}
 \begin{row-fluid}
@@ -446,7 +449,7 @@ DQN = Subsymbolic (DLNN) + 強化学習 (DLNN)
 
 
 \section{まとめ}
-\label{sec-4}
+\label{sec-5}
 
 \begin{resume}
 以上です、ありがとうございました。
@@ -490,109 +493,203 @@ Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
 \end{smaller}
 
 \section{付録}
-\label{sec-5}
-\subsection{NeuroSolver との違い}
-\label{sec-5-1}
+\label{sec-6}
+\subsection{既存システムとの違い (追加)}
+\label{sec-6-1}
 
-\subsection{neural heuristic との違い}
-\label{sec-5-2}
+\emph{NNで 直接問題を解くシステム}
 
-\subsection{LfO との違い}
-\label{sec-5-3}
+TSP [Hopfield and Tank, 1985], NeuroSolver [Bieszczad and Pagurek, 1998]
 
-\subsection{プランの評価手法}
-\label{sec-5-4}
+--- NNで解くが、入力はシンボリック (それぞれのニューロンが人の与えた状態変数に対応)
 
-\subsection{付録 古典プランニング問題とは (定義)}
-\label{sec-5-5}
+--- 完全性、最適性などの補償なし
 
-アクション集合 A, オブジェクト集合 O, 初期状態 I, ゴールG
+\emph{NNを認識でなく探索の枝刈りの中で使うシステム}
 
-\textbf{状態} := 真である命題の集合
+AlphaGo [Sievers 16], [Arfaee et al., 2011], [Satzger and Kramer, 2013]
 
-\textbf{アクションa∈A} : < pre(a), add(a), del(a), cost(a) >
+--- LatPlan は NNを探索の外で使う
 
-ただし、 pre(a): 前提条件, add(a): 追加効果, del(a): 削除効果, cost(a): アクションの適用コスト
+\subsection{Learning from Observation との違い}
+\label{sec-6-2}
 
-\textbf{状態sに対するアクションaの適用:} pre(a) ⊆ s の時に適用可能で、
+主にロボットの経路探索 (ローレベル制御) [Argall et al., 2009]
 
-　a(s) = ( s ∪ add(a) ) / del(a)
+ボードゲームの学習だが「マス目」など強い仮定 [Barbu et al., 2010; Kaiser, 2012; Kirk and Laird, 2016]
 
-\textbf{終了判定}: s ⊇ G ならば ゴール達成
+Action Segmentation problem がある
 
-\subsection{付録 古典プランニングを研究する意義は?}
-\label{sec-5-6}
+--- 「映像の観察」を中心とするので、いつアクションが始まる/終わるのか解らない
 
-\includegraphics{img/classical-meaning.png}
+--- LatPlan には関係なし
 
-\subsection{付録 AIの倫理について}
-\label{sec-5-7}
-
-\begin{itemize}
-\item 研究内容は 漠然とした「AI」のうち \textbf{グラフ探索} の研究
-\item 善悪の判断はそれ自体は行わない
-\item 価値判断は与えられる入力の中にある = 使用者の価値観を反映する
-\item 悪用の問題はある。しかし、自分としては、災害救助ロボットなど、人道的な応用を目指している
-\end{itemize}
-
-\subsection{付録 ディープラーニングとどう違うのか}
-\label{sec-5-8}
-
-\begin{itemize}
-\item 機械学習を埋め込むことは可能だ
-\item が、求められる推論の複雑さが根本的に違う → 独立した分野
-\end{itemize}
+\subsection{AIプランニングの \textbf{\emph{Killer App}}}
+\label{sec-6-3}
 
 \begin{container-fluid}
 \begin{row-fluid}
 \begin{span7}
-\textbf{ニューラルネット}, \textbf{DL}, \textbf{強化学習}
-\begin{itemize}
-\item 入力: 現在のデータ、過去の履歴、報酬 etc..
-\item 出力:
-\begin{itemize}
-\item \textbf{次の1ステップ} のアクション選択ポリシー (強化学習)
-\item \textbf{固定長の分類結果} (画像認識)
-\item ある意味 状況に応じて脊髄反射 なエージェント
-\end{itemize}
-\end{itemize}
+\begin{larger}
+\begin{description}
+\item[{人が高価or不可能な作業}] 原発, 宇宙空間, 火星, 深海
+\item[{正しさと最適性の理論保証が必要なミッションクリティカルシステム}] 製造システム、運送 (時間=お金)
+
+人工衛星 (燃料使いきれば運用終了)
+
+間違った解は許されない
+\item[{思考過程を説明可能なシステム}] レスキュー・宇宙船 (人間の安全がかかっている)
+\end{description}
+\end{larger}
 \end{span7}
 \begin{span5}
-\textbf{プランニング}
-出力:
-\begin{itemize}
-\item \textbf{10ステップ, 100ステップ先} の未来を \textbf{先読み} した行動計画
-\item ICAPS14,15の手法を使えば \textbf{数千ステップ} 先の未来まで先読みすることが出来る
-\end{itemize}
+
+
+\includegraphics{img/static/gravity-m.jpg}
 \end{span5}
 \end{row-fluid}
 \end{container-fluid}
 
-ただしプランニングに学習機を埋め込むことは \textbf{可能} (実例複数あり)
 
-DLから見て、プランニングは \textbf{アプリケーション}
 
-プランニングから見て、DLは \textbf{ツール}
 
-両者の組み合わせは機会があればやってみたい
 
-\subsection{付録 ディープラーニング関連}
-\label{sec-5-9}
+\subsection{古典プランニング問題 (決定的,完全情報) -- Blocksworld}
+\label{sec-6-4}
 
-趣味の一環で、Common Lisp から直接使えるGPGPUのライブラリを作成中 (DLを作ってみるため)
+\includegraphics{img/plan.png}
+\begin{larger}
+非古典的なさまざまな拡張
+\begin{alignright}
+(並列アクション,POMDP,HTN\ldots{} どのAIの教科書にものっている)
+\end{alignright}
+\end{larger}
+
+\subsubsection{アクション = 条件付き状態遷移}
+\label{sec-6-4-1}
+
+\begin{center}
+\begin{xlarge}
+アクション (move ?X ?Y)
+\end{xlarge}
+\end{center}
+
+\begin{center}
+\textbf{?X}, \textbf{?Y} : 変数。 値 \textbf{BLOCK-A}, \textbf{BLOCK-B} などを適用して使う
+
+\textbf{条件} と \textbf{効果} で構成される
+\end{center}
+
+
+\begin{container-fluid}
+\begin{row-fluid}
+\begin{span7}
+\begin{quote}
+\textbf{条件} : 実行に必要な条件を表す命題
+
+　(clear \textbf{?X}) : 積み木 \textbf{?X} の上が空
+
+　(clear \textbf{?Y}) : 積み木 \textbf{?Y} の上に空
+
+\textbf{効果} : 前後の状態の \textbf{差分} を表す命題
+
+　(on \textbf{?X} \textbf{?Y}) を \textbf{追加} : \textbf{?Y} の上は \textbf{?X}
+
+　(clear \textbf{?Y}) を \textbf{削除}
+\end{quote}
+\end{span7}
+\begin{span5}
+\begin{verbatim}
+(:action move
+ :parameters (?X ?Y)
+ :preconditions
+   (and (clear ?X)   ; (1)
+	(clear ?Y))  ; (2)
+
+ :effect
+   (and (on ?X ?Y)   ; (3)
+	(not         ; (4)
+	 (clear ?Y))))
+\end{verbatim}
+\begin{alignright}
+\begin{larger}
+モデリング言語 \textbf{PDDL} で記述
+\end{larger}
+\end{alignright}
+\end{span5}
+\end{row-fluid}
+\end{container-fluid}
+
+\subsubsection{プランニング = グラフ探索}
+\label{sec-6-4-2}
+
+\textbf{ノード} : 状態 = 命題の集合 ⇒ \texttt{(on A B)}, \texttt{(clear A)} など
+
+\textbf{辺}     : アクション ⇒ \texttt{(move A B)} 等
+
+\includegraphics{img/graph.png}
+
+
+\begin{note}
+*1 [Helmert, 2006] [Richter, 2010]
+\end{note}
+
+
+
+\subsection{古典プランニングを研究する意義は?}
+\label{sec-6-5}
+
+\includegraphics{img/classical-meaning.png}
+
+\subsection{AIの倫理について}
+\label{sec-6-6}
 
 \begin{itemize}
-\item OpenCLベース
-\item Lisp の文法を直接 OpenCL C に変換し実行するトランスレータ
-\item OpenCLのメモリ管理を Lisp GC に埋め込み
+\item 研究内容は 漠然とした「AI」のうち \textbf{グラフ探索} の研究
+\item AIの目的はプランナのゴールで定義される
+\begin{itemize}
+\item AI自体は善悪の判断を行わない
+\item 人が与えるゴールについての倫理的問題 (→ 兵器使用)
+\end{itemize}
+\item 価値判断は与えられる入力の中にある = 使用者の価値観/データのバイアスを反映
+\item 悪用の問題はある。しかし、自分としては、災害救助ロボットなど、人道的な応用を目指している
 \end{itemize}
 
-\subsection{付録 第五世代コンピュータとの違いは?}
-\label{sec-5-10}
+\subsection{ディープラーニング関連・LatPlan実装}
+\label{sec-6-7}
+
+詳しくは論文を
+
+Keras + TensorFlow
+
+1764(42x42)
+
+[→FC(4000,ReLu)→Batchnorm→Dropout(0.4)] × 2
+
+→FC(49,GumbelSoftmax) (variational loss)
+
+[→FC(4000,ReLu)→Batchnorm→Dropout(0.4)] × 2
+
+→1764(42x42) (loss: Binary crossentropy)
+
+　
+
+\begin{description}
+\item[{なぜ全結合??}] 論文の主題は \textbf{SAEで命題を作る方針がそもそもうまく行くかどうか}
+
+\textbf{→余計な要素を省いて限りなくシンプルに}
+
+\item[{8-パズルでの訓練}] 可能な全状態 (362880) 中 \textbf{12000 枚} で訓練 → 汎化能力あり
+
+Adam optimizer (learning rate:0.001)
+\end{description}
+
+\subsection{第五世代コンピュータとの違いは?}
+\label{sec-6-8}
 
 第五世代コンピュータ : 並列推論機械(Prologベース,ハードウェア,OS)
 
-根本的なソフトウェア技術、 \textbf{探索技術} が未発達だった
+ハードの問題ではなく、 根本的なソフトウェア技術、 \textbf{探索技術} が未発達だった
 
 \begin{center}
 \begin{tabular}{ll}
@@ -608,8 +705,8 @@ Prologベース & C/C++で高度に最適化されたプログラム\\
 
 仮に \textbf{当時のソフトウェア} を \textbf{現在のハードウェア} で動かしたとしても、 \textbf{100問も解けないだろう}
 
-\subsection{付録 Explicit Graph と Implicit Graph との違い}
-\label{sec-5-11}
+\subsection{Explicit Graph と Implicit Graph との違い}
+\label{sec-6-9}
 
 
 \begin{container-fluid}
@@ -621,7 +718,7 @@ Prologベース & C/C++で高度に最適化されたプログラム\\
 
 参考: 2012年の全世界のデジタルデータ: 数ゼタバイト (1ZB = 10$^{\text{21}}$ バイト)
 
-AI and Web の分野など
+AI and Web の分野, Social graph の解析など
 \end{span4}
 \begin{span8}
 \textbf{プランニングにおける探索グラフ} : Implicit Graph Search
@@ -630,7 +727,7 @@ AI and Web の分野など
 
 グラフのノード数は状態変数に対して \textbf{指数的に増加}
 
-動的に必要な量のみメモリ確保をしないと問題が解けない
+動的メモリ確保+優れた枝刈りをしないと問題が解けない
 
 探索空間サイズの例:
 
@@ -648,25 +745,12 @@ AI and Web の分野など
 Gantz et al. "The digital universe in 2020: Big data, bigger digital shadows, and biggest growth in the far east." IDC iView: IDC Analyze the Future 2007 (2012): 1-16.
 \end{note}
 
-\subsection{付録 似たような研究は誰がやっていますか どこでやられていますか}
-\label{sec-5-12}
+\subsection{似たような研究は誰がやっていますか どこでやられていますか}
+\label{sec-6-10}
 
+\textbf{ICAPS}, \textbf{SoCS} : 例年200人-300人の参加者を集めており大変盛況, 
 
-\begin{xlarge}
-国内ですか、国外ですか？
-\begin{center}
-YES NO
-\end{center}
-\end{xlarge}
-
-\subsection{付録 プランニングはマイナーで大したことのない分野?}
-\label{sec-5-13}
-
-日本にプランニングの研究室がない ≠ 世界で研究室がない
-
-\textbf{ICAPS}, \textbf{SoCS} : 例年150人-200人の参加者を集めており大変盛況, 
-
-\textbf{AAAI}, \textbf{IJCAI} : プランニングに関する論文は例年数十本採択 Proceedingsの一つの章をなす
+\textbf{AAAI}, \textbf{IJCAI} : プランニングに関する論文は例年数十本採択 Proceedingsの一つの章
 
 \textbf{JAIR}, \textbf{AIJ} : 論文誌でもプランニングの論文は多い (JAIR Volume 54: 12本中 2本 がプランニング論文)
 
@@ -676,10 +760,55 @@ MIT CSAIL (Brian Williams), Carnegie-Mellon,
 
 NASA (NASA Ames および NASA/Caltech JPL のそれぞれに20名以上の研究者), 欧州宇宙機関(ESA)
 
+King's College London, U. Freiburg, U. Bazel, U. Toronto, U. Ben-Gurion
+
 指導教員は NASA JPL AI Lab の元メンバー
 
-\subsection{付録 汎用性を失わずに解く?}
-\label{sec-5-14}
+\subsection{国内で誰が似たようなことをやっているか}
+\label{sec-6-11}
+
+\textbf{この専門分野をやっている人は少ない}
+
+石田 亨先生 (京都大学) --- 以前は日本のA*系の探索手法の代表者, Richard Korf と共著, いまはやっていない
+
+少し離れているが似ている研究というと
+
+SATソルバ, ASP(解集合)ソルバ, CPソルバ系
+推論系 -- logic and reasoning
+
+\begin{itemize}
+\item 田中 哲朗先生 (総合文化研究科)
+\item 鍋島英知先生 (山梨大)
+\item 井上克己先生 (NII) --- Lemma Reusing for SAT based Planning and Scheduling (ICAPS10)
+\item 田村直之先生, 平山勝利先生 (神戸大)
+\item 田沼先生
+\end{itemize}
+
+AAMAS マルチエージェント, CSP
+\begin{itemize}
+\item 九大 横尾誠先生
+\end{itemize}
+
+ERATO: 同じくグラフ探索をやっているが、explicit graph
+\begin{itemize}
+\item 河原林健一先生 (NII)
+\item 秋葉先生
+\end{itemize}
+
+ゲーム系
+\begin{itemize}
+\item 岸本先生 (東大将棋)
+\item 金子先生 (ゲーム)
+\end{itemize}
+
+----
+
+事情: 自分の指導教官(Alex Fukunaga)がアメリカから飛んできた、もともと日本にいなかった研究者だった
+
+Richard Korf --- Alex Fukunaga --- 浅井 政太郎
+
+\subsection{汎用性を失わずに解く?}
+\label{sec-6-12}
 
 \textbf{No Free Lunch 定理}: 最適化アルゴリズムの性能は \textbf{全問題の平均を取れば} 全て同じ
 
@@ -687,7 +816,7 @@ Q. NFL定理のもとで「汎用性を失わずに高速に解く」という�
 
 A. NFL定理は確かにそのように主張するが、プランニング分野の意味する「汎用性」は
 
-\textbf{人間にとって有意義な問題の集合} における汎用性である。
+\textbf{実問題(人間にとって有意義な問題の集合)} における汎用性である。
 
 \begin{center}
 全プランニング問題の集合 ⊇ 人間にとって有意義な問題の集合
@@ -695,8 +824,8 @@ A. NFL定理は確かにそのように主張するが、プランニング分�
 
 従って、 \textbf{全問題の平均を取れば} という前提が成り立たない。
 
-\subsection{付録 その研究は\ldots{}}
-\label{sec-5-15}
+\subsection{その研究は\ldots{}}
+\label{sec-6-13}
 
 
 
@@ -704,127 +833,37 @@ A. NFL定理は確かにそのように主張するが、プランニング分�
 \begin{tabular}{lllllll}
  & 重要度 & 評価 & オリジナリティ & 過去のインパクト & 未来のインパクト & 動機\\
 \hline
-ACP &  & 発表した & ループの概念を検出 & はるかに巨大な問題 & 産業応用 & 人間プログラマでは追いつかない\\
- &  & 難関学会 &  &  & 大規模問題 & \\
- &  &  &  &  &  & \\
- &  &  &  &  &  & \\
-CAP &  & 難関学会 & 問題分割手法 & 大規模な問題 & 産業応用 & \\
- &  & 発表した & 柔軟な統合手法 & それまでの分割系の手法より & 混ざった問題 & \\
- &  & いくつか質問された &  & 広範囲に分割 &  & \\
- &  & メールやり取り &  &  &  & \\
- &  &  &  &  &  & \\
+ACP &  & 発表した & ループの概念を検出 & 大規模問題 & 産業応用 & 人間プログラマでは追いつかない\\
+ &  & 難関学会 &  &  &  & \\
 \hline
-AAAI16 &  & 三人中 & 同コストのノードの分類 & 70年代からの定説を覆す & 広範なグラフ探索問題 & 下界以外で改善したかった\\
- &  & 二人の査読者に絶賛された &  & 通常と異なる方法で性能改善 & 基礎技術 & \\
- &  &  &  & コスト0は実応用によく使われる &  & \\
- &  &  &  &  &  & \\
- &  &  &  &  &  & \\
- &  &  &  &  &  & \\
+CAP &  & 難関学会 & 問題分割手法 & 大規模問題 & 産業応用 & より一般化したい\\
+ &  & 発表した & 柔軟な統合手法 & それまでの分割系の手法より &  & \\
+ &  &  &  & 広範囲に分割 &  & \\
 \hline
-過去全体 &  &  &  &  &  & \\
- &  &  &  &  &  & \\
-未来全体 &  &  &  &  &  & \\
- &  &  &  &  &  & \\
-過去未来 &  &  &  &  &  & \\
- &  &  &  &  &  & \\
- &  &  &  &  &  & グラフ探索の下界関数\\
- &  & どちらも &  &  &  & \\
-対称性 &  & underinvestigated, &  &  & 産業応用 & これの改善では改善に限界がある\\
- &  & もっとしらべるべき &  &  &  & ことがわかっている\\
-問題分割 &  & とされている &  &  &  & どちらも綺麗なアイディアではない\\
- &  &  &  &  &  & 産業応用\\
-融合 &  &  &  &  &  & \\
- &  &  &  &  &  & \\
+AAAI16 &  & AAAI査読者: & 同コストのノードの分類 & 70年代からの定説を覆す & 広範なグラフ探索問題 & 下界以外で改善したかった\\
+ &  & 2/3 人に絶賛 &  & 通常と異なる方法で性能改善 & 基礎技術 & \\
+ &  & (+ JSAI学生奨励賞) &  & コスト0は実応用によく使われる &  & \\
+\hline
+IJCAI17 &  & IJCAI査読者: & 辺コストが未知のドメイン &  &  & 医療福祉での実問題\\
+ &  & 明確な動悸,十分な実験 & という問題設定 &  &  & 全ての辺を計算できない\\
+\hline
+KEPS17 &  & IJCAI査読者: & 画像から自動で命題を生成 & ニューラルは記号と相容れない & ニューラル・記号複合システム & \\
+ &  & 「重要な方向性」 &  & シンボルグラウンディング &  & \\
+\hline
 \end{tabular}
 \end{center}
 
-\subsection{国内で誰が似たようなことをやっているか}
-\label{sec-5-16}
-
-この専門分野をやっている人は少ないんですが、
-少し離れているが最も似ている研究というと
-
-SATソルバの研究の人はいる -- 田中先生
-
-推論系 -- logic and reasoning
-
-Lemma Reusing for SAT based Planning and Scheduling
-ICAPS 10年ぐらい前 NIIの井上勝海 CSP でプランニング
-
-神戸大学
-田沼先生 SAT
-
-九大 横尾誠先生
-AAMAS マルチエージェントCSP
-
-自分の指導教官がアメリカから飛んできた研究者なので、もともと日本にいなかった研究者だった
-
-スライド2を見せる
-
-ERATOの人は同じくグラフ探索をやっていますが、
-explicit/implicit の違いがあります。
-瓦林先生
-秋葉さん
-
-Katsutoshi Hirayama, Kobe university  (constraint optimization, CSP, distributed CSP)
-
-Toru Ishida (Kyoto U. stopped working in search a long time ago, but for a while, he was the leader in A*-related search methods in Japan; coauthored some papers with Korf).
-
-\subsection{付録 学会論文の位置づけ}
-\label{sec-5-17}
-
 \subsection{HTN と ICAPS-15 の違い}
-\label{sec-5-18}
+\label{sec-6-14}
 
 HTNは人間が問題分割を行う
 人件費を考えると非常にコストパフォーマンスが悪い
 → 自動で問題分割
 
-\subsection{付録 Q\&A}
-\label{sec-5-19}
+\subsection{Q\&A}
+\label{sec-6-15}
 
 \begin{itemize}
 \item Q. 探索空間の比較について、なぜ「以前」の数字がスライドによって変わるの?
 \item A. 論文の中で使った実験設定が異なるからです。
 \end{itemize}
-
-\subsection{付録 今後のキャリアパスは？}
-\label{sec-5-20}
-
-研究者押しで押しまくる
-大学あるいは企業の研究者
-迷うことなくパッと答える
-
-\subsection{付録 今後の研究計画が、インパクトの少ない今までの延長のように見えるんだけど・・・}
-\label{sec-5-21}
-
-\subsection{付録 アドホックな解法に見えるんだけど・・・}
-\label{sec-5-22}
-
-\subsection{付録 失敗しそうなんだけど・・・}
-\label{sec-5-23}
-
-\subsection{付録?? とにかくまとはずれな質問}
-\label{sec-5-24}
-
-引き出しを探るタイプの質問
-
-
-
-上席研究員
-主任研究員
-
-senior engineer
-
-4段階
-
-下
-associate
-XX
-senior
-principal
-上
-
-PI principal investigator
-
-time sink
