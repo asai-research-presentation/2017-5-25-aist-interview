@@ -11,7 +11,6 @@ ncpu       = $(shell grep "processor" /proc/cpuinfo | wc -l)
 .PHONY: auto all img scripts clean allclean html pdf resume index css deploy
 .SECONDLY: *.elc *.org.*
 
-key.pdf: key.tex presen.org.tex img $(styles)
 %.pdf: %.tex presen.org.tex img $(styles)
 	$(latexmk) -r latexmk/rc_ja.pl \
 		   -latexoption="-halt-on-error" \
@@ -25,8 +24,7 @@ key.pdf: key.tex presen.org.tex img $(styles)
 %.org.html: %.org scripts org-mode
 	scripts/org-html.sh $< $@
 
-default: index
-all: index pdf nokey resume
+all: index
 html: img css presen.org.html MathJax
 pdf:    key.pdf
 nokey:  nokey.pdf
@@ -44,7 +42,7 @@ MathJax:
 	$(call get-archive, https://github.com/mathjax/MathJax/archive/2.6.1.tar.gz, MathJax-2.6.1, $@)
 
 org-mode:
-	$(call get-archive, http://orgmode.org/org-8.2.10.tar.gz, org-8.2.10, $@)
+	$(call get-archive, http://orgmode.org/org-8.3.6.tar.gz, org-8.3.6, $@)
 	$(MAKE) -C $@ compile
 
 scripts:
